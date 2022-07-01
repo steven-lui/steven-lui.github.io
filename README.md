@@ -1,8 +1,8 @@
 # Netmatters
-Hi, I'm on a course with Netmatters. One of my assignments on this course is this [repo](https://github.com/IcePack25/steven-lui.github.io){:target="_blank"}!
+Hi, I'm on a course with Netmatters. One of my assignments on this course is this [repo](https://github.com/IcePack25/steven-lui.github.io)!
 
 ## Todo:
-- [ ] Develop the [website page](https://www.netmatters.co.uk/){:target="_blank"} and rebuild it using HTML and SASS, based on the learning you have recently carried out.
+- [ ] Develop the [website page](https://www.netmatters.co.uk/) and rebuild it using HTML and SASS, based on the learning you have recently carried out.
 - [ ] Some elements will be completed when you revisit this in your JavaScript reflection these include:
     - [ ] The slider functionality - for now please add one static image with the overlaying text and button.
     - [ ] The side menu - for now please add the menu button in the top right, the functionality for this button will be added later.
