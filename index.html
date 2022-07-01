@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- https://fonts.google.com/specimen/Poppins?query=poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/df396576ab.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- tab -->
     <title>Netmatters &mid; Full Service Digital Agency &mid; Cambridgeshire &and; Norfolk &mid; Netmatters</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+    <!-- LAYOUT (xs/s)
+        main navbar (contains logo, telephone shortcut and burger menu. below, general search bar)
+
+        splash img
+        Our Services (dynamic grid)
+        auto gallery of awards (auto greyscale, colored in and pauses on hover)
+        welcome and reviews (read more, buttons for google and trustpilot. on dark theme light font)
+        latest news (light theme, article grids with read mores and view all)
+        email newsletter sign-up (slightly grey background)
+
+        footer
+    -->
+    <!-- HEADER -->
+    <header>
+        <!-- Partially sticky on desktop -->
+        <div>
+            <ul class="main-nav">
+                <!-- Logo -->
+                <li><a href="#">home</a></li>
+
+                <!-- Telephone, query if you need to link to anything -->
+                <li><a href="#">phone</a></li>
+
+                <!-- SUPPORT -->
+                <!-- DISAPPEARS ON SMALL -->
+                <li><a href="#">support</a></li>
+
+                <!-- CONTACT -->
+                <!-- DISAPPEARS ON SMALL -->
+                <li><a href="#">contact</a></li>
+
+                <!-- Search... -->
+                <!-- BOTTOM ON SMALL -->
+                <li><a href="#">search</a></li>
+
+                <!-- Burger menu -->
+                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -->
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- DISAPPEARS ON SMALL-->
+        <div>
+            <ul class="second-nav">
+                <li><a href="#">software</a></li>
+                <li><a href="#">support</a></li>
+                <li><a href="#">marketing</a></li>
+                <li><a href="#">telecoms</a></li>
+                <li><a href="#">design</a></li>
+                <li><a href="#">security</a></li>
+                <li><a href="#">training</a></li>
+            </ul>
+        </div>
+    </header>
 
 
+    <main>
+        <h1>Link do not target anything</h1>
+    </main>
+
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
