@@ -15,9 +15,15 @@
     <!-- https://fontawesome.com/ -->
     <script src="https://kit.fontawesome.com/df396576ab.js" crossorigin="anonymous"></script>
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- https://getbootstrap.com/docs/5.2/getting-started/download/ -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.0-beta1-dist\js\bootstrap.min.js"></script>
+
+    <!-- https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- tab -->
     <title>Netmatters &mid; Full Service Digital Agency &mid; Cambridgeshire &and; Norfolk &mid; Netmatters</title>
@@ -25,18 +31,6 @@
 </head>
 
 <body>
-    <!-- LAYOUT (xs/s)
-        main navbar (contains logo, telephone shortcut and burger menu. below, general search bar)
-
-        splash img
-        Our Services (dynamic grid)
-        auto gallery of awards (auto greyscale, colored in and pauses on hover)
-        welcome and reviews (read more, buttons for google and trustpilot. on dark theme light font)
-        latest news (light theme, article grids with read mores and view all)
-        email newsletter sign-up (slightly grey background)
-
-        footer
-    -->
     <!-- HEADER -->
     <header>
         <!-- Partially sticky on desktop -->
@@ -85,11 +79,99 @@
 
 
     <main>
-        <h1>Link do not target anything</h1>
+        <!-- SPLASH -->
+        <section>
+            <h1>The East Of England's Leading Technology Company (Link do not target anything)</h1>
+            <p>Performance-driven digital and technology services with complete transparency.</p>
+        </section>
+
+        <!-- OUR SERVICES -->
+        <section>
+            <h1>Our Services</h1>
+            <!-- GRID OF SERVICES -->
+            <!-- AWARDS -->
+        </section>
+
+        <!-- WELCOME -->
+        <section class="welcome">
+            <h1>Welcome to Netmatters</h1>
+            <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the
+                    East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</strong></p>
+            <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your
+                business are based purely with one benefit in mind: to help improve your business with the most
+                appropriate solutions.</p>
+            <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that
+                ensures you get the most from our relationship in an upfront manner.</p>
+            <!-- READMORE BUTTON -->
+            <button>read more</button>
+        </section>
+
+        <!-- REVIEWS -->
+        <section>
+            <h1>What Our Clients Think</h1>
+            <figure>
+                <!-- 5 stars -->
+                <blockquote>
+                    Great service. Took the reigns and did all the leg work for us. Ensured we were happy with our
+                    website
+                    and made all changes necessary as and when asked to do so.
+                </blockquote>
+                <figcaption>The Oliver King - SEA Scaffolding</figcaption>
+            </figure>
+            <!-- BUTTONS -->
+            <div>
+                <button>google reviews</button>
+                <button>trustpilot reviews</button>
+            </div>
+        </section>
+
+        <!-- LATEST NEWS -->
+        <section>
+            <h1>Latest News</h1>
+            <!-- MORE AWARDS -->
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section>
+            <h1>Email Newsletter Sign-Up</h1>
+            <div>
+
+            </div>
+        </section>
     </main>
 
 
     <footer>
+        <!-- div to grid-->
+        <div>
+            <!-- about links, addresses-->
+            <!-- flex this? -->
+            <div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <!-- copyright and sitemap -->
+            <div>
+                <p>&copy; Copyright Netmatters 2022. All rights reserved. - <a href="#">Sitemap (doesn't work &#9785;)</a></p>
+            </div>
+            <!-- social media links-->
+            <div>
+                <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/netmatters/" target="_blank"></a>
+                <a class="fa-brands fa-twitter" href="https://twitter.com/netmattersltd" target="_blank"></a>
+                <a class="fa-brands fa-instagram" href="https://www.instagram.com/netmattersltd/" target="_blank"></a>
+                <a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/company/netmatters-ltd/?original_referer=" target="_blank"></a>
+            </div>
+        </div>
 
     </footer>
 </body>
