@@ -1,0 +1,3 @@
+.card [value]::after {
+    color:map-get($service-colors, value);
+}

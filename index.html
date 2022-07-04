@@ -33,79 +33,64 @@
 <body>
     <!-- HEADER -->
     <header>
-        <!-- Partially sticky on desktop -->
-        <div class="position-static">
-            <ul class="main d-flex container">
-                <!-- Logo -->
-                <li>
-                    <a href="#">
-                        <img src="img/logo.png" alt="netmatters">
-                    </a>
-                </li>
+        <!-- MAIN HEADER -->
+        <nav class="navbar" id="main-navbar">
+            <div class="container-fluid justify-content-center">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand logo" aria-current="Home">
+                    <img class="img-fluid" src="img/logo.png" alt="netmatters">
+                </a>
 
                 <!-- Telephone, query if you need to link to anything -->
-                <!-- DISAPPEARS ABOVE MEDIUM -->
                 <!-- href="tel:xxxxxxxxxxx" -->
-                <li>
-                    <button type="button" class="btn btn-outline-primary" id="phone-button">
-                        <a href="#">
-                            <i class="fa-solid fa-phone"></i>
-                        </a>
-                    </button>
-                </li>
+                <button type="button" class="nav-item btn btn-outline-primary d-lg-none mx-2" id="phone-button">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </button>
 
                 <!-- SUPPORT -->
-                <!-- HIDE ON MEDIUM -->
-                <li>
-                    <button type="button" class="btn btn-primary">
-                        <a href="#" class="text-nowrap">
-                            <i class="fa-solid fa-computer-mouse"></i>
-                            support
-                        </a>
-                    </button>
-                </li>
+                <button type="button" class="nav-item btn btn-primary d-none d-lg-block btn-lg mx-2">
+                    <a href="#" class="text-nowrap">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                        support
+                    </a>
+                </button>
 
                 <!-- CONTACT -->
-                <!-- HIDE ON MEDIUM -->
-                <li>
-                    <button class="btn btn-secondary text-nowrap">
-                        <a href="#">
-                            <i class="fa-solid fa-paper-plane"></i>
-                            contact</a>
+                <button type="button" class="nav-item btn btn-secondary d-none d-lg-block btn-lg mx-2">
+                    <a href="#" class="text-nowrap">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        contact</a>
+                </button>
+
+                <!-- SIDEBAR MENU -->
+                <a class="btn btn-primary btn-lg mx-2 order-md-last" role="button" id="sidebar-button">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <!-- SEARCH -->
+                <form class="d-flex nav-item mx-2" role="search">
+                    <!-- ICON ONLY ON MEDIUM, OPENS SEARCH -->
+                    <input class="form-control col-sm" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-secondary btn-lg" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
+                </form>
+            </div>
+        </nav>
 
-                    <!-- Search... -->
-                    <!-- BOTTOM ON SMALL -->
-                    <!-- SIDE ON MEDIUM-->
-                <li>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control col-2" placeholder="Search..." aria-label="Search"
-                            aria-describedby="search-button">
-                        <button class="btn btn-secondary" type="button" id="search-button"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </li>
-
-                <!-- BURGER MENU -->
-                <li>
-                    <a class="btn btn-primary" role="button" id="sidebar-button">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- SHOW ON LG AND UP -->
-        <div class="position-static">
-            <ul class="second navbar">
-                <li><a href="#">software</a></li>
-                <li><a href="#">support</a></li>
-                <li><a href="#">marketing</a></li>
-                <li><a href="#">telecoms</a></li>
-                <li><a href="#">design</a></li>
-                <li><a href="#">security</a></li>
-                <li><a href="#">training</a></li>
-            </ul>
-        </div>
+        <!-- SERVICES HEADER -->
+        <nav class="navbar d-none d-lg-block" id="service-navbar">
+            <div class="container-fluid text-center">
+                <a href="#" class="nav-item upper"><i class="fa-solid fa-grid"></i><br>bespoke<br>software</a>
+                <a href="#" class="nav-item upper"><i class="fa-solid fa-display"></i><br>it<br>support</a>
+                <a href="#" class="nav-item upper"><i
+                        class="fa-solid fa-signal-bars-good"></i><br>digital<br>marketing</a>
+                <a href="#" class="nav-item upper"><i class="fa-solid fa-phone"></i><br>telecoms<br>services</a>
+                <a href="#" class="nav-item upper"><i class="fa-solid fa-code"></i><br>web<br>design</a>
+                <a href="#" class="nav-item upper"><i class="fa-solid fa-shield-quartered"></i><br>cyber<br>security</a>
+                <a href="#" class="nav-item upper"><i class="fa-solid fa-graduation-cap"></i><br>developer<br>course</a>
+            </div>
+        </nav>
     </header>
 
 
@@ -125,6 +110,26 @@
             <div class="container">
                 <h1>Our Services</h1>
                 <!-- GRID OF SERVICES -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" value="software">
+                                test
+                                <i class="fa-solid fa-display" class="card-top"></i>
+                                <div class="card-body">
+                                    <h5 class="card-title">Bespoke Software</h5>
+                                    <p class="card-text">Tailored software solutions to improve business productivity and online profits.</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+
                 <!-- AWARDS -->
             </div>
 

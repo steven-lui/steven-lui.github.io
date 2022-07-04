@@ -1,8 +1,10 @@
-ul {
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    li {
-        padding:0 1em 0 1em;
+.logo {
+    max-width: 60vw;
+}
+
+#service-navbar {
+    background-color: $color-secondary;
+    a {
+        color: $white;
     }
 }

@@ -3,6 +3,7 @@ body {
 }
 h1 {
     font-weight: 600;
+    font-size: 3rem;
 }
 
 a {
@@ -11,7 +12,9 @@ a {
 
 .dark-background {
     background-color: $color-primary;
-    color: $white;
+    &, a {
+        color:$white;
+    }
 }
 
 div {
@@ -19,7 +22,6 @@ div {
 }
 
 #cover {
-    width: 100%;
     padding: 20vh 0 20vh;
 
     background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
@@ -32,10 +34,6 @@ div {
     }
 }
 
-#cover-header {
-    width:66vw;
-}
-
-#cover-text {
-    width:40vw;
+.upper, .btn {
+    text-transform: uppercase;
 }

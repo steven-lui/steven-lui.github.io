@@ -6,20 +6,21 @@ body {
   font-family: 'Poppins', sans-serif; }
 
 h1 {
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 3rem; }
 
 a {
   text-decoration: none; }
 
 .dark-background {
-  background-color: #333645;
-  color: #fff; }
+  background-color: #333645; }
+  .dark-background, .dark-background a {
+    color: #fff; }
 
 div {
   padding: 1em; }
 
 #cover {
-  width: 100%;
   padding: 20vh 0 20vh;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), black), url(../img/cover.jpg) no-repeat center;
   background-size: cover; }
@@ -27,34 +28,28 @@ div {
     font-weight: 600;
     color: #fff; }
 
-#cover-header {
-  width: 66vw; }
+.upper, .btn {
+  text-transform: uppercase; }
 
-#cover-text {
-  width: 40vw; }
+.logo {
+  max-width: 60vw; }
 
-ul {
-  list-style-type: none;
-  justify-content: center;
-  align-items: center; }
-  ul li {
-    padding: 0 1em 0 1em; }
+#service-navbar {
+  background-color: #272936; }
+  #service-navbar a {
+    color: #fff; }
 
 .btn {
-  text-transform: uppercase;
   padding: 0.75em;
   border: none; }
-  .btn i {
-    padding: 0 0.5em 0 0.5em; }
-  .btn a {
-    color: #fff; }
+  .btn i, .btn a {
+    color: #fff;
+    text-overflow: unset; }
 
 #sidebar-button {
   background-color: #333645; }
 
-#phone-button a {
+#phone-button i {
   color: #333645; }
-#phone-button :hover {
-  background-color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
