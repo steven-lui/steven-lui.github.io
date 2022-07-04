@@ -1,3 +1,18 @@
+/*
+    scss file structure referred from TreeHouse - "Sass Basics - Debugging Sass with Sourcemaps"
+    https://teamtreehouse.com/library/debugging-sass-with-sourcemaps
+*/
+body {
+  font-family: 'Poppins', sans-serif; }
 
+#cover {
+  width: 100%;
+  padding: 15vh 0 15vh;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), black), url(../img/cover.jpg) no-repeat center;
+  background-size: cover; }
+  #cover h1,
+  #cover p {
+    font-weight: 600;
+    color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */

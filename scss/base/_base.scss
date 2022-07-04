@@ -1,0 +1,18 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#cover {
+    width: 100%;
+    padding: 15vh 0 15vh;
+
+    h1,
+    p {
+        font-weight: 600;
+        color: $white;
+    }
+
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
+    url(../img/cover.jpg) no-repeat center;
+    background-size: cover;
+}
