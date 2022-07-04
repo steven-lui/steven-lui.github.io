@@ -5,14 +5,56 @@
 body {
   font-family: 'Poppins', sans-serif; }
 
+h1 {
+  font-weight: 600; }
+
+a {
+  text-decoration: none; }
+
+.dark-background {
+  background-color: #333645;
+  color: #fff; }
+
+div {
+  padding: 1em; }
+
 #cover {
   width: 100%;
-  padding: 15vh 0 15vh;
+  padding: 20vh 0 20vh;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), black), url(../img/cover.jpg) no-repeat center;
   background-size: cover; }
-  #cover h1,
   #cover p {
     font-weight: 600;
     color: #fff; }
+
+#cover-header {
+  width: 66vw; }
+
+#cover-text {
+  width: 40vw; }
+
+ul {
+  list-style-type: none;
+  justify-content: center;
+  align-items: center; }
+  ul li {
+    padding: 0 1em 0 1em; }
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.75em;
+  border: none; }
+  .btn i {
+    padding: 0 0.5em 0 0.5em; }
+  .btn a {
+    color: #fff; }
+
+#sidebar-button {
+  background-color: #333645; }
+
+#phone-button a {
+  color: #333645; }
+#phone-button :hover {
+  background-color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
