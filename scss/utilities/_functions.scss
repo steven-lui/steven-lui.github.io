@@ -1,0 +1,13 @@
+@function getColor($palette, $key) {
+    $p: map-get($palettes, $palette);
+    $return: white;
+
+    //inner palette received as a list, iterate to find the right color
+    @each $k,
+    $col in $p {
+        @if $k == $key {
+            $return: $col;
+        }
+    }
+    @return $return;
+}

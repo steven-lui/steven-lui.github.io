@@ -8,9 +8,18 @@
 }
 
 #sidebar-button {
-    background-color: $color-primary;
+    
+    background-color: getColor(layout, primary);
 }
 
 #phone-button i {
-    color: $color-primary;
+    color: getColor(layout, primary);
+}
+
+#google {
+    background-color: getColor(reviews, google);
+}
+
+#trustpilot {
+    background-color: getColor(reviews, trustpilot);
 }

@@ -3,8 +3,8 @@
 }
 
 #service-navbar {
-    background-color: $color-secondary;
+    background-color: getColor(layout, primary);
     a {
-        color: $white;
+        color: getColor(service, software);
     }
 }
