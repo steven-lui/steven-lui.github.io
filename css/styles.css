@@ -2,27 +2,17 @@
     scss file structure referred from TreeHouse - "Sass Basics - Debugging Sass with Sourcemaps"
     https://teamtreehouse.com/library/debugging-sass-with-sourcemaps
 */
-/*
-//Icons
-$service-icons: (
-    'software': '<i class='fa-solid fa-grid'></i>',
-    'support': '<i class='fa-solid fa-display'></i>',
-    'marketing': '<i class='fa-solid fa-signal-bars-good'></i>',
-    'telecoms': '<i class='fa-solid fa-phone'></i>',
-    'design': '<i class="fa-solid fa-code"></i>',
-    'security': '<i class="fa-solid fa-shield-quartered"></i>',
-    'training': '<i class='fa-solid fa-graduation-cap'></i>',
-);
-*/
 body {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  color: #333645; }
 
 h1 {
   font-weight: 600;
   font-size: 3rem; }
 
 .upper, .btn {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-radius: 5%; }
 
 .btn {
   padding: 0.75em;
@@ -34,7 +24,6 @@ h1 {
 
 #burger {
   background-color: #333645;
-  border-radius: 0 !important;
   width: 4rem;
   height: 3.5rem; }
 
@@ -56,6 +45,20 @@ h1 {
 
 #main-nav {
   height: 10.5rem; }
+
+.card {
+  padding: 2em 0 1em 0; }
+  .card .btn,
+  .card .thumbnail {
+    background-color: #333645;
+    color: #ffffff; }
+  .card .thumbnail {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  .card-body p {
+    font-size: 0.8em;
+    line-height: 1.8em; }
 
 #cover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cover.jpg) no-repeat center;
