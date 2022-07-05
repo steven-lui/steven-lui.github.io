@@ -21,48 +21,47 @@ h1 {
   font-weight: 600;
   font-size: 3rem; }
 
-a {
-  text-decoration: none; }
-
-div {
-  padding: 1em; }
-
-#cover {
-  padding: 20vh 0 20vh;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), black), url(../img/cover.jpg) no-repeat center;
-  background-size: cover; }
-  #cover p {
-    font-weight: 600;
-    color: #ffffff; }
-
 .upper, .btn {
   text-transform: uppercase; }
-
-.logo {
-  max-width: 60vw; }
-
-#service-navbar {
-  background-color: #333645; }
-  #service-navbar a {
-    color: white; }
 
 .btn {
   padding: 0.75em;
   border: none; }
-  .btn i, .btn a {
+  .btn i,
+  .btn a {
     color: #ffffff;
     text-overflow: unset; }
 
-#sidebar-button {
-  background-color: #333645; }
+#burger {
+  background-color: #333645;
+  border-radius: 0 !important;
+  width: 4rem;
+  height: 3.5rem; }
 
-#phone-button i {
-  color: #333645; }
+#phone,
+#search-submit {
+  float: right; }
+  #phone i,
+  #search-submit i {
+    color: #333645; }
+
+#phone i :hover {
+  text-decoration: underline; }
 
 #google {
   background-color: #4387f6; }
 
 #trustpilot {
   background-color: #00b67b; }
+
+#main-nav {
+  height: 10.5rem; }
+
+#cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cover.jpg) no-repeat center;
+  background-size: cover; }
+  #cover p, #cover h1 {
+    font-weight: 600;
+    color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */

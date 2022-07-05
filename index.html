@@ -33,53 +33,50 @@
 <body>
     <!-- HEADER -->
     <header>
-        <!-- MAIN HEADER -->
-        <nav class="navbar" id="main-navbar">
-            <div class="container-fluid justify-content-center">
-                <!-- LOGO -->
-                <a href="#" class="navbar-brand logo" aria-current="Home">
-                    <img class="img-fluid" src="img/logo.png" alt="netmatters">
-                </a>
+        <div class="container w-auto">
+            <!-- MAIN HEADER -->
+            <nav class="navbar" id="main-nav">
+                <div class="row flex-nowrap py-2 align-items-center">
+                    <!-- LOGO -->
+                    <div class="col-6">
+                        <a href="#" id="logo" aria-current="Home">
+                            <img class="img-fluid" src="img/logo.png" alt="netmatters">
+                        </a>
+                    </div>
 
-                <!-- Telephone, query if you need to link to anything -->
-                <!-- href="tel:xxxxxxxxxxx" -->
-                <button type="button" class="nav-item btn btn-outline-primary d-md-none mx-2" id="phone-button">
-                    <a href="#"><i class="fa-solid fa-phone"></i></a>
-                </button>
+                    <!-- Telephone, query if you need to link to anything -->
+                    <!-- href="tel:xxxxxxxxxxx" -->
+                    <div class="col-3 item-align-left">
+                        <button type="button" class="nav-item btn" id="phone">
+                            <a href="#"><i class="fa-solid fa-phone fa-2x"></i></a>
+                        </button>
+                    </div>
 
-                <!-- SUPPORT -->
-                <button type="button" class="nav-item btn btn-primary d-none d-lg-block btn-lg mx-2">
-                    <a href="#" class="text-nowrap">
-                        <i class="fa-solid fa-computer-mouse"></i>
-                        support
-                    </a>
-                </button>
+                    <!-- BURGER MENU -->
+                    <div class="col-3">
+                        <button type="button" class="nav-item btn" id="burger">
+                            <a href="#"><i class="fa-solid fa-bars fa-2x"></i></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- SEARCH -->
+                    <form method="GET" class="form d-flex">
+                        <input type="text" class="form-control form-control-lg w-100" placeholder="Search..."
+                            aria-label="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" id="search-submit">
+                                <i class="fa-solid fa-magnifying-glass ms-auto"></i>
+                            </button>
+                        </span>
+                    </form>
+                </div>
+            </nav>
+        </div>
 
-                <!-- CONTACT -->
-                <button type="button" class="nav-item btn btn-secondary d-none d-lg-block btn-lg mx-2">
-                    <a href="#" class="text-nowrap">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        contact</a>
-                </button>
-
-                <!-- SIDEBAR MENU -->
-                <a class="btn btn-primary btn-lg mx-2 order-md-last" role="button" id="sidebar-button">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-
-                <!-- SEARCH -->
-                <form class="d-flex nav-item mx-2" role="search">
-                    <!-- ICON ONLY ON MEDIUM, OPENS SEARCH -->
-                    <input class="form-control col-sm" type="search" placeholder="Search..." aria-label="Search">
-                    <button class="btn btn-secondary btn-lg" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-        </nav>
 
         <!-- SERVICES HEADER -->
-        <nav class="navbar d-none d-lg-block" id="service-navbar">
+        <nav class="navbar d-none" id="service-navbar">
             <div class="container-fluid text-center">
                 <a href="#" class="nav-item upper"><i class="fa-solid fa-grid"></i><br>bespoke<br>software</a>
                 <a href="#" class="nav-item upper"><i class="fa-solid fa-display"></i><br>it<br>support</a>
@@ -97,10 +94,9 @@
     <main>
         <!-- SPLASH -->
         <section id="cover">
-            <div class="text-lg-start text-center container">
-                <p class="display-3 gx-5 text-wrap" id="cover-header">The East Of England's Leading Technology Company
-                </p>
-                <p class="h4 text-wrap" id="cover-text">Performance-driven digital and technology services with complete
+            <div class="text-lg text-center py-5">
+                <h1>The East Of England's Leading Technology Company</h1>
+                <p class="text-wrap mx-3">Performance-driven digital and technology services with complete
                     transparency.</p>
             </div>
         </section>
@@ -111,22 +107,14 @@
                 <h1>Our Services</h1>
                 <!-- GRID OF SERVICES -->
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card" value="software">
-                                test
-                                <i class="fa-solid fa-display" class="card-top"></i>
-                                <div class="card-body">
-                                    <h5 class="card-title">Bespoke Software</h5>
-                                    <p class="card-text">Tailored software solutions to improve business productivity and online profits.</p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
-                                </div>
-
-                            </div>
+                    <div class="card" value="software">
+                        <i class="fa-solid fa-display" class="card-top"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Bespoke Software</h5>
+                            <p class="card-text">Tailored software solutions to improve business productivity
+                                and online profits.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
                         </div>
-                    </div>
-                    <div class="row">
-
                     </div>
                 </div>
 
@@ -135,46 +123,44 @@
 
         </section>
 
-        <!-- dark background -->
         <!-- WELCOME & READMORE -->
-        <div class="d-flex">
-            <!-- WELCOME -->
-            <section id="welcome" class="container">
-                <h1>Welcome to Netmatters</h1>
-                <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in
-                        the
-                        East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</strong></p>
-                <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for
-                    your
-                    business are based purely with one benefit in mind: to help improve your business with the most
-                    appropriate solutions.</p>
-                <p>We pride ourselves on being an ethical business and have a unique business offering and cost model
-                    that
-                    ensures you get the most from our relationship in an upfront manner.</p>
-                <!-- READMORE BUTTON -->
-                <button>read more</button>
+        <!-- WELCOME -->
+        <section id="welcome" class="container">
+            <h1>Welcome to Netmatters</h1>
+            <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in
+                    the
+                    East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</strong></p>
+            <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for
+                your
+                business are based purely with one benefit in mind: to help improve your business with the most
+                appropriate solutions.</p>
+            <p>We pride ourselves on being an ethical business and have a unique business offering and cost model
+                that
+                ensures you get the most from our relationship in an upfront manner.</p>
+            <!-- READMORE BUTTON -->
+            <button>read more</button>
 
-            </section>
+        </section>
 
-            <!-- REVIEWS -->
-            <section id="reviews" class="container">
-                <h1>What Our Clients Think</h1>
-                <figure>
-                    <!-- 5 stars -->
-                    <blockquote>
-                        Great service. Took the reigns and did all the leg work for us. Ensured we were happy with our
-                        website
-                        and made all changes necessary as and when asked to do so.
-                    </blockquote>
-                    <figcaption>The Oliver King - SEA Scaffolding</figcaption>
-                </figure>
-                <!-- BUTTONS -->
-                <div>
-                    <button id="google" class="btn btn-lg">google reviews<i class='fa-solid fa-arrow-right'></i></button>
-                    <button id="trustpilot" class="btn btn-lg">trustpilot reviews<i class='fa-solid fa-arrow-right'></i></button>
-                </div>
-            </section>
-        </div>
+        <!-- REVIEWS -->
+        <section id="reviews" class="container">
+            <h1>What Our Clients Think</h1>
+            <figure>
+                <!-- 5 stars -->
+                <blockquote>
+                    Great service. Took the reigns and did all the leg work for us. Ensured we were happy with our
+                    website
+                    and made all changes necessary as and when asked to do so.
+                </blockquote>
+                <figcaption>The Oliver King - SEA Scaffolding</figcaption>
+            </figure>
+            <!-- BUTTONS -->
+            <div>
+                <button id="google" class="btn btn-lg">google reviews<i class='fa-solid fa-arrow-right'></i></button>
+                <button id="trustpilot" class="btn btn-lg">trustpilot reviews<i
+                        class='fa-solid fa-arrow-right'></i></button>
+            </div>
+        </section>
 
 
         <!-- LATEST NEWS -->

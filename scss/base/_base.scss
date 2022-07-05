@@ -7,27 +7,6 @@ h1 {
     font-size: 3rem;
 }
 
-a {
-    text-decoration: none;
-}
-
-div {
-    padding: 1em;
-}
-
-#cover {
-    padding: 20vh 0 20vh;
-
-    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100)),
-    url(../img/cover.jpg) no-repeat center;
-    background-size: cover;
-
-    p {
-        font-weight: 600;
-        color:$white;
-    }
-}
-
 .upper, .btn {
     text-transform: uppercase;
 }
