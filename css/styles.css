@@ -41,12 +41,6 @@ h1 {
 #phone i :hover {
   text-decoration: underline; }
 
-#google {
-  background-color: #4387f6; }
-
-#trustpilot {
-  background-color: #00b67b; }
-
 #main-nav {
   height: 10.5rem; }
 
@@ -217,5 +211,29 @@ h1 {
   #services #training .thumbnail {
     background-color: #ce4125;
     color: #ffffff; }
+
+#reviews {
+  font-weight: 600; }
+  #reviews .stars {
+    color: #ffa500; }
+  #reviews blockquote {
+    font-size: 1.3rem; }
+  #reviews figcaption {
+    font-size: 1.1rem;
+    color: #999aa2; }
+
+#google {
+  color: #ffffff;
+  background-color: #4387f6;
+  margin-bottom: 1rem; }
+
+#trustpilot {
+  color: #ffffff;
+  background-color: #00b67b;
+  margin-bottom: 1rem; }
+
+#welcome .btn {
+  color: #ffffff;
+  background-color: #272936; }
 
 /*# sourceMappingURL=styles.css.map */

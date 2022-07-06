@@ -1,0 +1,24 @@
+#reviews {
+    font-weight: 600;
+
+    .stars {
+        color: $star-color;
+    }
+
+    blockquote {
+        font-size: 1.3rem;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
+        color: getColor(layout, darkgrey);
+    }
+}
+
+@each $tag in $reviews {
+    ##{$tag} {
+        color:$white;
+            background-color: getColor(reviews, $tag);
+            margin-bottom: 1rem;
+    }
+}
