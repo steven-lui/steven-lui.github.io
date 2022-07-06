@@ -1,0 +1,13 @@
+@each $tag in map-keys($service-icons) {
+    #latest ##{$tag} {
+        h2 {
+            color: getColor(services, $tag);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        p {
+            font-size: .8125rem;
+            line-height: 1.375rem;
+        }
+    }
+}

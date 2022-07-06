@@ -8,7 +8,8 @@ body {
 
 h1 {
   font-weight: 600;
-  font-size: 3rem; }
+  font-size: 3rem;
+  padding-top: 3rem; }
 
 .upper, .btn {
   text-transform: uppercase;
@@ -44,6 +45,41 @@ h1 {
 #main-nav {
   height: 10.5rem; }
 
+#software .btn,
+#software .thumbnail {
+  background-color: #67809f;
+  color: #ffffff; }
+
+#support .btn,
+#support .thumbnail {
+  background-color: #4183d7;
+  color: #ffffff; }
+
+#marketing .btn,
+#marketing .thumbnail {
+  background-color: #2ecc71;
+  color: #ffffff; }
+
+#telecoms .btn,
+#telecoms .thumbnail {
+  background-color: #d64541;
+  color: #ffffff; }
+
+#design .btn,
+#design .thumbnail {
+  background-color: #926fb1;
+  color: #ffffff; }
+
+#security .btn,
+#security .thumbnail {
+  background-color: #f62459;
+  color: #ffffff; }
+
+#training .btn,
+#training .thumbnail {
+  background-color: #ce4125;
+  color: #ffffff; }
+
 #cover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cover.jpg) no-repeat center;
   background-size: cover; }
@@ -58,9 +94,6 @@ h1 {
   #services #software h2 {
     padding-bottom: 1rem;
     font-size: 1.3rem; }
-  #services #software p {
-    font-size: 0.8125rem;
-    line-height: 1.8em; }
   #services #software .thumbnail {
     display: flex;
     align-items: center;
@@ -69,10 +102,6 @@ h1 {
     height: 4em;
     width: 4em;
     border-radius: 50%; }
-  #services #software .btn,
-  #services #software .thumbnail {
-    background-color: #67809f;
-    color: #ffffff; }
 
 #services #support {
   padding: 2em 0 1em 0;
@@ -81,9 +110,6 @@ h1 {
   #services #support h2 {
     padding-bottom: 1rem;
     font-size: 1.3rem; }
-  #services #support p {
-    font-size: 0.8125rem;
-    line-height: 1.8em; }
   #services #support .thumbnail {
     display: flex;
     align-items: center;
@@ -92,10 +118,6 @@ h1 {
     height: 4em;
     width: 4em;
     border-radius: 50%; }
-  #services #support .btn,
-  #services #support .thumbnail {
-    background-color: #4183d7;
-    color: #ffffff; }
 
 #services #marketing {
   padding: 2em 0 1em 0;
@@ -104,9 +126,6 @@ h1 {
   #services #marketing h2 {
     padding-bottom: 1rem;
     font-size: 1.3rem; }
-  #services #marketing p {
-    font-size: 0.8125rem;
-    line-height: 1.8em; }
   #services #marketing .thumbnail {
     display: flex;
     align-items: center;
@@ -115,10 +134,6 @@ h1 {
     height: 4em;
     width: 4em;
     border-radius: 50%; }
-  #services #marketing .btn,
-  #services #marketing .thumbnail {
-    background-color: #2ecc71;
-    color: #ffffff; }
 
 #services #telecoms {
   padding: 2em 0 1em 0;
@@ -127,9 +142,6 @@ h1 {
   #services #telecoms h2 {
     padding-bottom: 1rem;
     font-size: 1.3rem; }
-  #services #telecoms p {
-    font-size: 0.8125rem;
-    line-height: 1.8em; }
   #services #telecoms .thumbnail {
     display: flex;
     align-items: center;
@@ -138,10 +150,6 @@ h1 {
     height: 4em;
     width: 4em;
     border-radius: 50%; }
-  #services #telecoms .btn,
-  #services #telecoms .thumbnail {
-    background-color: #d64541;
-    color: #ffffff; }
 
 #services #design {
   padding: 2em 0 1em 0;
@@ -150,9 +158,6 @@ h1 {
   #services #design h2 {
     padding-bottom: 1rem;
     font-size: 1.3rem; }
-  #services #design p {
-    font-size: 0.8125rem;
-    line-height: 1.8em; }
   #services #design .thumbnail {
     display: flex;
     align-items: center;
@@ -161,10 +166,6 @@ h1 {
     height: 4em;
     width: 4em;
     border-radius: 50%; }
-  #services #design .btn,
-  #services #design .thumbnail {
-    background-color: #926fb1;
-    color: #ffffff; }
 
 #services #security {
   padding: 2em 0 1em 0;
@@ -173,9 +174,6 @@ h1 {
   #services #security h2 {
     padding-bottom: 1rem;
     font-size: 1.3rem; }
-  #services #security p {
-    font-size: 0.8125rem;
-    line-height: 1.8em; }
   #services #security .thumbnail {
     display: flex;
     align-items: center;
@@ -184,10 +182,6 @@ h1 {
     height: 4em;
     width: 4em;
     border-radius: 50%; }
-  #services #security .btn,
-  #services #security .thumbnail {
-    background-color: #f62459;
-    color: #ffffff; }
 
 #services #training {
   padding: 2em 0 1em 0;
@@ -196,9 +190,6 @@ h1 {
   #services #training h2 {
     padding-bottom: 1rem;
     font-size: 1.3rem; }
-  #services #training p {
-    font-size: 0.8125rem;
-    line-height: 1.8em; }
   #services #training .thumbnail {
     display: flex;
     align-items: center;
@@ -207,10 +198,6 @@ h1 {
     height: 4em;
     width: 4em;
     border-radius: 50%; }
-  #services #training .btn,
-  #services #training .thumbnail {
-    background-color: #ce4125;
-    color: #ffffff; }
 
 #reviews {
   font-weight: 600; }
@@ -220,7 +207,8 @@ h1 {
     font-size: 1.3rem; }
   #reviews figcaption {
     font-size: 1.1rem;
-    color: #999aa2; }
+    color: #999aa2;
+    padding: 1rem 0 1.5rem 0; }
 
 #google {
   color: #ffffff;
@@ -235,5 +223,70 @@ h1 {
 #welcome .btn {
   color: #ffffff;
   background-color: #272936; }
+
+#latest #software h2 {
+  color: #67809f;
+  font-weight: 600;
+  font-size: 1rem; }
+#latest #software p {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+
+#latest #support h2 {
+  color: #4183d7;
+  font-weight: 600;
+  font-size: 1rem; }
+#latest #support p {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+
+#latest #marketing h2 {
+  color: #2ecc71;
+  font-weight: 600;
+  font-size: 1rem; }
+#latest #marketing p {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+
+#latest #telecoms h2 {
+  color: #d64541;
+  font-weight: 600;
+  font-size: 1rem; }
+#latest #telecoms p {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+
+#latest #design h2 {
+  color: #926fb1;
+  font-weight: 600;
+  font-size: 1rem; }
+#latest #design p {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+
+#latest #security h2 {
+  color: #f62459;
+  font-weight: 600;
+  font-size: 1rem; }
+#latest #security p {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+
+#latest #training h2 {
+  color: #ce4125;
+  font-weight: 600;
+  font-size: 1rem; }
+#latest #training p {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+
+#newsletter {
+  background-color: #dddddd; }
+  #newsletter h1 {
+    font-weight: 400;
+    font-size: 2rem; }
+  #newsletter .btn {
+    background-color: #333645;
+    color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */

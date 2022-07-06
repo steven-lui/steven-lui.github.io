@@ -8,9 +8,12 @@
 
 @import 'base/base';
 
-@import 'components/buttons';
+@import 'components/button';
+@import 'components/card';
 
 @import 'layout/cover';
 @import 'layout/services';
 @import 'layout/reviews';
-@import 'layout/welcome'
+@import 'layout/welcome';
+@import 'layout/latest';
+@import 'layout/newsletter';

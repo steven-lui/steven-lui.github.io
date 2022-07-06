@@ -1,0 +1,13 @@
+#newsletter {
+    background-color: getColor(layout, lightgrey);
+
+    h1 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .btn {
+        background-color: getColor(layout, primary);
+        color: $white;
+    }
+}

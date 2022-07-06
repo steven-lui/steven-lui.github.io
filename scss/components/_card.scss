@@ -1,0 +1,9 @@
+@each $tag in map-keys($service-icons) {
+    ##{$tag} {
+        .btn,
+        .thumbnail {
+            background-color: getColor(services, $tag);
+            color: $white;
+        }
+    }
+}
