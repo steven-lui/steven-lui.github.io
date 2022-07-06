@@ -27,14 +27,14 @@ $font-stack: 'Poppins', sans-serif;
 
 //Icons
 $service-icons: (
-    software: "fa-grid",
+    software: "fa-solid fa-grip-vertical",
     support: "fa-display",
-    marketing: "fa-signal-bars-good",
+    marketing: "fa-solid fa-signal",
     telecoms: "fa-phone",
     design: "fa-code",
-    security:"fa-shield-quartered",
-    training: "fa-graduation-cap",
+    security:"fa-shield-halved",
+    training: "fa-user-graduate",
 );
 
-$star: '<i class=' fa-solid fa-star'></i>';
+$star: "fa-star";
 $right-arrow: '<i class=' fa-solid fa-arrow-right'></i>';

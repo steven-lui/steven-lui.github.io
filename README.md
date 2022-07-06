@@ -19,7 +19,7 @@ Hi, I'm on a course with Netmatters. One of my assignments on this course is thi
     - [x] Call your file index.html
     - [ ] Set the meta viewport and charset within the HTML
     - [ ] Use mobile first
-    - [ ] Use Flexbox and/or Bootstrap
+    - [x] Use Flexbox and/or Bootstrap
     - [ ] Tackle this section by section
     - [x] Use Font Awesome or icomoon for icons
 

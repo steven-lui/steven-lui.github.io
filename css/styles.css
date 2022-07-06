@@ -14,6 +14,10 @@ h1 {
   text-transform: uppercase;
   border-radius: 5%; }
 
+.dark-bg {
+  background-color: #333645;
+  color: #ffffff; }
+
 .btn {
   padding: 0.75em;
   border: none; }
@@ -46,25 +50,172 @@ h1 {
 #main-nav {
   height: 10.5rem; }
 
-.card {
-  padding: 2em 0 1em 0; }
-  .card .btn,
-  .card .thumbnail {
-    background-color: #333645;
-    color: #ffffff; }
-  .card .thumbnail {
-    height: 4em;
-    width: 4em;
-    border-radius: 50%; }
-  .card-body p {
-    font-size: 0.8em;
-    line-height: 1.8em; }
-
 #cover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cover.jpg) no-repeat center;
   background-size: cover; }
   #cover p, #cover h1 {
     font-weight: 600;
+    color: #ffffff; }
+
+#services #software {
+  padding: 2em 0 1em 0;
+  margin-bottom: 2rem;
+  text-align: center; }
+  #services #software h2 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+  #services #software p {
+    font-size: 0.8125rem;
+    line-height: 1.8em; }
+  #services #software .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  #services #software .btn,
+  #services #software .thumbnail {
+    background-color: #67809f;
+    color: #ffffff; }
+
+#services #support {
+  padding: 2em 0 1em 0;
+  margin-bottom: 2rem;
+  text-align: center; }
+  #services #support h2 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+  #services #support p {
+    font-size: 0.8125rem;
+    line-height: 1.8em; }
+  #services #support .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  #services #support .btn,
+  #services #support .thumbnail {
+    background-color: #4183d7;
+    color: #ffffff; }
+
+#services #marketing {
+  padding: 2em 0 1em 0;
+  margin-bottom: 2rem;
+  text-align: center; }
+  #services #marketing h2 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+  #services #marketing p {
+    font-size: 0.8125rem;
+    line-height: 1.8em; }
+  #services #marketing .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  #services #marketing .btn,
+  #services #marketing .thumbnail {
+    background-color: #2ecc71;
+    color: #ffffff; }
+
+#services #telecoms {
+  padding: 2em 0 1em 0;
+  margin-bottom: 2rem;
+  text-align: center; }
+  #services #telecoms h2 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+  #services #telecoms p {
+    font-size: 0.8125rem;
+    line-height: 1.8em; }
+  #services #telecoms .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  #services #telecoms .btn,
+  #services #telecoms .thumbnail {
+    background-color: #d64541;
+    color: #ffffff; }
+
+#services #design {
+  padding: 2em 0 1em 0;
+  margin-bottom: 2rem;
+  text-align: center; }
+  #services #design h2 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+  #services #design p {
+    font-size: 0.8125rem;
+    line-height: 1.8em; }
+  #services #design .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  #services #design .btn,
+  #services #design .thumbnail {
+    background-color: #926fb1;
+    color: #ffffff; }
+
+#services #security {
+  padding: 2em 0 1em 0;
+  margin-bottom: 2rem;
+  text-align: center; }
+  #services #security h2 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+  #services #security p {
+    font-size: 0.8125rem;
+    line-height: 1.8em; }
+  #services #security .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  #services #security .btn,
+  #services #security .thumbnail {
+    background-color: #f62459;
+    color: #ffffff; }
+
+#services #training {
+  padding: 2em 0 1em 0;
+  margin-bottom: 2rem;
+  text-align: center; }
+  #services #training h2 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem; }
+  #services #training p {
+    font-size: 0.8125rem;
+    line-height: 1.8em; }
+  #services #training .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%; }
+  #services #training .btn,
+  #services #training .thumbnail {
+    background-color: #ce4125;
     color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
