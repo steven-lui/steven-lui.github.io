@@ -1,0 +1,16 @@
+footer {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+    ul li a {
+        padding-left:0;
+    }
+
+    #social-media {
+        display: flex;
+        justify-content: space-around;
+    }
+}

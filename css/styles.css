@@ -19,6 +19,9 @@ h1 {
   background-color: #333645;
   color: #ffffff; }
 
+li {
+  list-style: none; }
+
 .btn {
   padding: 0.75em;
   border: none; }
@@ -288,5 +291,17 @@ h1 {
   #newsletter .btn {
     background-color: #333645;
     color: #ffffff; }
+
+footer {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+  footer a {
+    color: #ffffff;
+    text-decoration: none; }
+  footer ul li a {
+    padding-left: 0; }
+  footer #social-media {
+    display: flex;
+    justify-content: space-around; }
 
 /*# sourceMappingURL=styles.css.map */
