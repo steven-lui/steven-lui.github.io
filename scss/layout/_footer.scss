@@ -1,12 +1,11 @@
 footer {
     font-size: .8125rem;
-    line-height: 1.375rem;
+    h2 {
+        font-size: 1rem;
+    }
     a {
         color: $white;
         text-decoration: none;
-    }
-    ul li a {
-        padding-left:0;
     }
 
     #social-media {

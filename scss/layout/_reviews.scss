@@ -6,13 +6,10 @@
     }
 
     blockquote {
-        font-size: 1.3rem;
     }
 
     figcaption {
-        font-size: 1.1rem;
         color: getColor(layout, darkgrey);
-        padding: 1rem 0 1.5rem 0;
     }
 }
 
@@ -20,6 +17,5 @@
     ##{$tag} {
         color:$white;
             background-color: getColor(reviews, $tag);
-            margin-bottom: 1rem;
     }
 }
