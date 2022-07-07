@@ -10,6 +10,7 @@
 @import 'components/button';
 @import 'components/card';
 
-.debug * {
-    border: 1px solid black;
-}
+@import 'layouts/header';
+@import 'layouts/base';
+@import 'layouts/cover';
+@import 'layouts/services';

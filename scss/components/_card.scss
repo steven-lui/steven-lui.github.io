@@ -1,5 +1,6 @@
 @each $tag in map-keys($service-icons) {
     .#{$tag} {
+
         .btn,
         .thumbnail {
             background-color: getColor(services, $tag);
@@ -7,10 +8,15 @@
     }
 }
 
-.card-title {
-    font-size: 1.3rem;
-}
+.card {
+    padding: 3em 0;
+    margin: 1em 0;
 
-.card-text {
-    @include small-text;
+    &-title {
+        font-size: 1.3rem;
+    }
+
+    &-text {
+        @include small-text;
+    }
 }

@@ -17,7 +17,7 @@
 
     <!-- https://getbootstrap.com/docs/5.2/getting-started/download/ -->
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
-    <script src="bootstrap-5.2.0-beta1-dist\js\bootstrap.min.js"></script>
+    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
 
     <!-- https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -32,48 +32,49 @@
 
 <body>
     <header>
-        <nav class="navbar-nav">
+        <nav class="navbar-nav" id="main-nav">
             <div class="container">
                 <div class="row align-items-center">
+
                     <div class="col-6">
                         <div class="navbar-brand">
-                            <a href="#" aria-current="Home">
-                                <img class="img-fluid" src="img/logo.png" alt="netmatters">
+                            <a href="#">
+                                <img class="img-fluid logo" src="img/logo.png" alt="netmatters">
                             </a>
                         </div>
                     </div>
+
                     <div class="col-3">
-                        <div class="nav-item float-end">
-                            <button type="button" class="btn phone">
-                                <a href="#">
-                                    <i class="fa-solid fa-phone"></i>
-                                </a>
-                            </button>
+                        <div class="nav-item">
+                            <a href="#" class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
                         </div>
                     </div>
+
                     <div class="col-3">
-                        <div class="nav-item float-end">
-                            <button type="button" class="btn burger">
+                        <div class="nav-item">
+                            <button class="btn burger">
                                 <i class="fa-solid fa-bars"></i>
                             </button>
                         </div>
                     </div>
+
                     <div class="col-12">
                         <div class="nav-item">
-                            <div class="input-group">
-                                <input type="text" class="form-control rounded-0" placeholder="Search...">
-                                <button class="input-group-text rounded-0" id="search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
+                            <div class="input-group align-items-center">
+                                <input class="input-group-text" type="text" placeholder="Search...">
+                                <span class="input-group-append">
+                                    <button type="submit" value="SEARCH" class="btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </span>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </nav>
-        </section>
 
     </header>
 
@@ -246,7 +247,7 @@
             <div>
                 <div class="card marketing">
                     <div class="card-body">
-                        <img src="img/junior-digital-marketing.jpg" class="img-fluid thumbnail">
+                        <img src="img/junior-digital-marketing.jpg" class="img-fluid thumbnail" alt="Now Hiring">
                         <h2 class="card-title">Junior Digital Marketing Executive</h2>
                         <p class="card-text">Salary Range £18,000 &dash; £23,000 Hours 40 hours per week, Mon &mdash;
                             Fri Location Wymondham, Norfolk. Great...</p>
@@ -304,7 +305,7 @@
         <div class="dark-bg">
             <!-- about links, addresses-->
             <div class="row">
-                <div id="about">
+                <div id="footer-about">
                     <div class="col-12">
                         <h2 class="row upper">About Netmatters</h2>
                         <ul>
@@ -320,7 +321,7 @@
                     </div>
                 </div>
 
-                <div id="services">
+                <div id="footer-services">
                     <div class="col-12">
                         <h2 class="row upper">Our Services</h2>
                         <ul>
@@ -334,7 +335,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="offices">
+                <div id="footer-offices">
                     <div class="col-12">
                         <h2 class="row upper">Cambridge Office</h2>
                         <ul>
@@ -360,11 +361,11 @@
                     <div class="col-12">
                         <h2 class="row upper">Great Yarmouth Office</h2>
                         <ul>
-                            <li class="row"> Suite F23, </li>
-                            <li class="row"> Beacon Innovation Centre, </li>
-                            <li class="row"> Beacon Park, Gorleston, </li>
-                            <li class="row"> Great Yarmouth, Norfolk, </li>
-                            <li class="row"> NR31 7RA </li>
+                            <li class="row">Suite F23,</li>
+                            <li class="row">Beacon Innovation Centre,</li>
+                            <li class="row">Beacon Park, Gorleston,</li>
+                            <li class="row">Great Yarmouth, Norfolk,</li>
+                            <li class="row">NR31 7RA</li>
                             <li class="row"><a href="#">Tel: 01493 60 32 04</a></li>
                         </ul>
                     </div>
@@ -373,14 +374,14 @@
 
             <div class="row border-top">
                 <!--copyright-->
-                <div class="col-4" id="copyright">
+                <div class="col-4" id="footer-copyright">
                     <p>&copy; Copyright Netmatters 2022. All rights reserved.</p>
                 </div>
                 <div class="col-1">
                     <p>&dash;</p>
                 </div>
                 <!-- sitemap -->
-                <div class="col-2" id="sitemap">
+                <div class="col-2" id="footer-sitemap">
                     <a href="#">Sitemap</a>
                 </div>
                 <!-- social media links-->

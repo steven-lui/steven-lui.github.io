@@ -1,12 +1,9 @@
 //Colors
-$white: #ffffff;
-
 $palettes: (
     layout: (primary: #333645,
         secondary: #272936,
         accent: #4183d7,
-        lightgray: #dddddd,
-        darkgrey: #999aa2,
+        white: #ffffff,
     ),
     services: (software: #67809f,
         support: #4183d7,
@@ -27,8 +24,10 @@ $reviews: (
     "trustpilot",
 );
 
-//Fonts
+//Font
 $font-stack: 'Poppins', sans-serif;
+
+//Font sizes
 
 
 //Icons
