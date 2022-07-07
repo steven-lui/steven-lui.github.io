@@ -1,34 +1,5 @@
 .btn {
-    border: none;
-
-    i,
-    a {
-        color: $white;
-        text-overflow: unset;
-    }
-}
-
-#burger {
-    background-color: getColor(layout, primary);
-    width:4rem;
-    height:3.5rem;
-}
-
-#phone,
-#search-submit {
-    float: right;
-
-    i {
-        color: getColor(layout, primary);
-    }
-}
-
-#phone {
-    i :hover {
-        text-decoration: underline;
-    }
-}
-
-#main-nav {
-    height: 10.5rem;
+    text-transform: capitalize;
+    text-overflow: unset;
+    border:none;
 }

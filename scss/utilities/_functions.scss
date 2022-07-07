@@ -15,7 +15,3 @@
 @function getServiceIcon($key) {
     @return map-get($service-icons, $key);
 }
-
-@function generateCard() {
-
-}
