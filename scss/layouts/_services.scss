@@ -1,9 +1,18 @@
 #services {
+
     //@include debug;
+    h1 {
+        font-size: 2.7rem;
+    }
+
     text-align: center;
 
     .card {
         border-radius: 4%;
+
+        &-title {
+            color: getColor(layout, primary);
+        }
     }
 
     .thumbnail {

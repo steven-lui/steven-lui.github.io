@@ -2,6 +2,10 @@
     .#{$tag} {
         padding: 0em 1em;
 
+        .card-title {
+            color: getColor(services, $tag);
+        }
+
         .btn,
         .thumbnail {
             background-color: getColor(services, $tag);
@@ -10,9 +14,12 @@
 }
 
 .card {
-    padding-top: 2rem;
-    margin-bottom: 2rem;
-    //min-height: 20rem;
+    &-body {
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        //min-height: 20rem;
+    }
+
 
     &-title {
         font-size: 1.3rem;

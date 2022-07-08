@@ -13,65 +13,79 @@
 
 .software {
   padding: 0em 1em; }
+  .software .card-title {
+    color: #67809f; }
   .software .btn,
   .software .thumbnail {
     background-color: #67809f; }
 
 .support {
   padding: 0em 1em; }
+  .support .card-title {
+    color: #4183d7; }
   .support .btn,
   .support .thumbnail {
     background-color: #4183d7; }
 
 .marketing {
   padding: 0em 1em; }
+  .marketing .card-title {
+    color: #2ecc71; }
   .marketing .btn,
   .marketing .thumbnail {
     background-color: #2ecc71; }
 
 .telecoms {
   padding: 0em 1em; }
+  .telecoms .card-title {
+    color: #d64541; }
   .telecoms .btn,
   .telecoms .thumbnail {
     background-color: #d64541; }
 
 .design {
   padding: 0em 1em; }
+  .design .card-title {
+    color: #926fb1; }
   .design .btn,
   .design .thumbnail {
     background-color: #926fb1; }
 
 .security {
   padding: 0em 1em; }
+  .security .card-title {
+    color: #f62459; }
   .security .btn,
   .security .thumbnail {
     background-color: #f62459; }
 
 .training {
   padding: 0em 1em; }
+  .training .card-title {
+    color: #ce4125; }
   .training .btn,
   .training .thumbnail {
     background-color: #ce4125; }
 
-.card {
+.card-body {
   padding-top: 2rem;
   margin-bottom: 2rem; }
-  .card-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.8em; }
-  .card-text {
-    font-size: .8125rem;
-    line-height: 1.375rem; }
-  .card .thumbnail {
-    font-size: 1.8em;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .card .btn {
-    font-size: 1.063rem;
-    border-radius: .2em;
-    margin-bottom: 1em; }
+.card-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8em; }
+.card-text {
+  font-size: .8125rem;
+  line-height: 1.375rem; }
+.card .thumbnail {
+  font-size: 1.8em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.card .btn {
+  font-size: 1.063rem;
+  border-radius: .2em;
+  margin-bottom: 1em; }
 
 #main-nav {
   padding-top: 1.5em; }
@@ -114,7 +128,7 @@ strong {
   font-weight: 600; }
 
 h1 {
-  font-size: 2.7rem;
+  font-size: 2.25rem;
   margin-bottom: 0.8em; }
 
 a {
@@ -143,8 +157,12 @@ p {
 
 #services {
   text-align: center; }
+  #services h1 {
+    font-size: 2.7rem; }
   #services .card {
     border-radius: 4%; }
+    #services .card-title {
+      color: #333645; }
   #services .thumbnail {
     border-radius: 50%;
     width: 4rem;
@@ -155,8 +173,6 @@ p {
   background-color: #333645; }
   #welcome * {
     color: #ffffff; }
-  #welcome h1 {
-    font-size: 2.25rem; }
   #welcome .btn {
     background-color: #272936;
     min-width: 13rem; }
@@ -172,8 +188,6 @@ p {
     background-color: #00b67b; }
   #reviews .star {
     background-color: #ffa500; }
-  #reviews h1 {
-    font-size: 2.25rem; }
   #reviews figure i {
     color: #ffa500;
     margin-bottom: 1.7rem; }
@@ -189,5 +203,18 @@ p {
     height: 3.5rem; }
     #reviews .btn i {
       padding: 0 1rem; }
+
+#latest .view-all {
+  font-size: 1.625rem;
+  justify-content: center;
+  margin-top: 2.8rem; }
+#latest .card {
+  margin-bottom: 2rem; }
+  #latest .card-title {
+    font-weight: 600; }
+  #latest .card-img-top {
+    object-fit: cover; }
+  #latest .card .author {
+    margin-top: 2em; }
 
 /*# sourceMappingURL=styles.css.map */
