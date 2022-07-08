@@ -1,0 +1,35 @@
+#newsletter {
+    h1 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    background: rgba(0, 0, 0, .15);
+
+    .input-group-text {
+        background-color: getColor(layout, white);
+        margin-bottom: .7em;
+        
+    }
+
+    .required::after {
+        content: " *";
+        color: red;
+    }
+
+    .form-check-input {
+        height: 2rem;
+        width: 2rem;
+        border: solid 3px getColor(layout, primary);
+        background: inherit;
+    }
+
+    .btn {
+        @include dark;
+        color: getColor(layout, white);
+    }
+
+    strong {
+        line-height: 2em;
+    }
+}

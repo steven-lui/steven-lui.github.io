@@ -3,6 +3,7 @@ body {
     background-color: getColor(layout, white);
     color: getColor(layout, primary);
     font-family: $font-stack;
+    letter-spacing: .4px;
 }
 
 h1,
@@ -26,4 +27,13 @@ section {
 
 p {
     line-height: 1.875rem;
+}
+
+.input-group {
+    &-text {
+        border-radius: 0;
+        height: 3em;
+        text-align: start;
+        width: 100%;
+    }
 }
