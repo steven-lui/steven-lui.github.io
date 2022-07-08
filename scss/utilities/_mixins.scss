@@ -17,3 +17,13 @@
     height: $size;
     align-self: center;
 }
+
+@mixin dark {
+    background-color: getColor(layout, primary);
+
+    * {
+        color: getColor(layout, white);
+    }
+
+    @content;
+}
