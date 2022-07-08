@@ -1,0 +1,12 @@
+#services {
+    //@include debug;
+    text-align: center;
+
+    .card {
+        border-radius: 4%;
+    }
+
+    .thumbnail {
+        @include round-thumbnail(4rem);
+    }
+}

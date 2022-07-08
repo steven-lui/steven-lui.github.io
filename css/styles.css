@@ -3,45 +3,71 @@
     https://teamtreehouse.com/library/debugging-sass-with-sourcemaps
 */
 .btn {
-  text-transform: capitalize;
-  text-overflow: unset;
-  border: none; }
+  border: none;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase; }
 
-.software .btn,
-.software .thumbnail {
-  background-color: #67809f; }
+.software {
+  padding: 0em 1em; }
+  .software .btn,
+  .software .thumbnail {
+    background-color: #67809f; }
 
-.support .btn,
-.support .thumbnail {
-  background-color: #4183d7; }
+.support {
+  padding: 0em 1em; }
+  .support .btn,
+  .support .thumbnail {
+    background-color: #4183d7; }
 
-.marketing .btn,
-.marketing .thumbnail {
-  background-color: #2ecc71; }
+.marketing {
+  padding: 0em 1em; }
+  .marketing .btn,
+  .marketing .thumbnail {
+    background-color: #2ecc71; }
 
-.telecoms .btn,
-.telecoms .thumbnail {
-  background-color: #d64541; }
+.telecoms {
+  padding: 0em 1em; }
+  .telecoms .btn,
+  .telecoms .thumbnail {
+    background-color: #d64541; }
 
-.design .btn,
-.design .thumbnail {
-  background-color: #926fb1; }
+.design {
+  padding: 0em 1em; }
+  .design .btn,
+  .design .thumbnail {
+    background-color: #926fb1; }
 
-.security .btn,
-.security .thumbnail {
-  background-color: #f62459; }
+.security {
+  padding: 0em 1em; }
+  .security .btn,
+  .security .thumbnail {
+    background-color: #f62459; }
 
-.training .btn,
-.training .thumbnail {
-  background-color: #ce4125; }
+.training {
+  padding: 0em 1em; }
+  .training .btn,
+  .training .thumbnail {
+    background-color: #ce4125; }
 
 .card {
-  padding: 3em 0;
-  margin: 1em 0; }
+  padding-top: 2rem;
+  margin-bottom: 2rem; }
   .card-title {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    margin-bottom: 0.8em; }
   .card-text {
-    font-size: .8125rem; }
+    font-size: .8125rem;
+    line-height: 1.375rem; }
+  .card .thumbnail {
+    font-size: 1.8em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .card .btn {
+    font-size: 1.063rem;
+    border-radius: .2em;
+    margin-bottom: 1em; }
 
 #main-nav {
   padding-top: 1.5em; }
@@ -57,7 +83,7 @@
     width: 2em;
     border-radius: 4px; }
   #main-nav [class*="col"] {
-    padding-bottom: 1em; }
+    padding-bottom: 1.125em; }
   #main-nav .input-group input {
     height: 3em;
     text-align: start;
@@ -70,15 +96,14 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 1.5em; }
-
-.debug * {
-  border: 1px solid black; }
+    font-size: 1.5rem;
+    padding: .5rem .5rem; }
 
 body {
   font-size: 1rem;
   background-color: #ffffff;
-  color: #333645; }
+  color: #333645;
+  font-family: "Poppins", sans-serif; }
 
 h1,
 strong {
@@ -107,5 +132,15 @@ section {
   #cover h1 {
     font-size: 2em;
     padding: 0 1em; }
+
+#services {
+  text-align: center; }
+  #services .card {
+    border-radius: 4%; }
+  #services .thumbnail {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    align-self: center; }
 
 /*# sourceMappingURL=styles.css.map */

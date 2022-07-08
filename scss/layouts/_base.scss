@@ -1,11 +1,8 @@
-.debug * {
-    border: 1px solid black;
-}
-
 body {
     font-size: 1rem;
     background-color: getColor(layout, white);
     color: getColor(layout, primary);
+    font-family: $font-stack;
 }
 
 h1,

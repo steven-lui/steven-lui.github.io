@@ -1,4 +1,19 @@
+@mixin debug {
+    * {
+        outline: solid 1px red;
+    }
+
+    @content;
+}
+
 @mixin small-text {
     font-size: .8125rem;
     @content;
+}
+
+@mixin round-thumbnail($size) {
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+    align-self: center;
 }
