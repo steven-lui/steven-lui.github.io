@@ -1,8 +1,6 @@
 #reviews {
     @include dark;
 
-    padding-bottom: 2.7rem;
-
     @each $key,
     $col in map-get($palettes, reviews) {
         .#{$key} {

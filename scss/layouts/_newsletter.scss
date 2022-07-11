@@ -6,23 +6,33 @@
 
     background: rgba(0, 0, 0, .15);
 
-    .input-group-text {
-        background-color: getColor(layout, white);
-        margin-bottom: .7em;
-        
-    }
-
     .required::after {
         content: " *";
         color: red;
     }
 
-    .form-check-input {
-        height: 2rem;
-        width: 2rem;
-        border: solid 3px getColor(layout, primary);
-        background: inherit;
+    .form {
+        &-control {
+            height: 2.75rem;
+            background-color: getColor(layout, white);
+            margin-bottom: .7em;
+            border-radius: 0;
+
+        }
+
+        &-check-input {
+            height: 2rem;
+            width: 2rem;
+            border: solid 3px getColor(layout, primary);
+            background: inherit;
+
+            &:checked {
+                color: getColor(layout, white);
+                background-color: getColor(layout, primary);
+            }
+        }
     }
+
 
     .btn {
         @include dark;

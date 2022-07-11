@@ -2,20 +2,13 @@
     * {
         outline: solid 1px red;
     }
-
     @content;
 }
 
-@mixin small-text {
-    font-size: .8125rem;
-    @content;
-}
-
-@mixin round-thumbnail($size) {
+@mixin round-background($size) {
     border-radius: 50%;
     width: $size;
     height: $size;
-    align-self: center;
 }
 
 @mixin dark {

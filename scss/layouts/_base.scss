@@ -6,6 +6,15 @@ body {
     letter-spacing: .4px;
 }
 
+section {
+    padding: 2rem 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 h1,
 strong {
     font-weight: 600;
@@ -13,16 +22,6 @@ strong {
 
 h1 {
     font-size: 2.25rem;
-    margin-bottom: 0.8em;
-}
-
-a {
-    color: getColor(layout, primary);
-    text-decoration: none;
-}
-
-section {
-    padding-top: 1.4em;
 }
 
 p {

@@ -250,7 +250,7 @@
 
 
         <!-- LATEST NEWS -->
-        <section id="latest" class="container">
+        <section id="latest">
             <div class="container">
                 <h1>Latest News</h1>
 
@@ -337,39 +337,42 @@
 
 
         <!-- NEWSLETTER -->
-        <section id="newsletter" class="container">
-            <h1>Email Newsletter Sign-Up</h1>
-            <form action="#">
-                <label for="name" class="form-label required"><strong>Your Name</strong></label>
-                <input type="text" name="newslettername" id="name" class="input-group-text" required>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Email Newsletter Sign-Up</h1>
+                <form action="#">
+                    <label for="name" class="form-label required"><strong>Your Name</strong></label>
+                    <input type="name" name="name" id="newsletter-name" class="form-control" required>
 
-                <label for="email" class="form-label required"><strong>Your Email</strong></label>
-                <input type="text" name="newsletteremail" id="email" class="input-group-text" required>
+                    <label for="email" class="form-label required"><strong>Your Email</strong></label>
+                    <input type="email" name="email" id="newsletter-email" class="form-control" required>
 
-                <div class="row">
-                    <div class="col">
-                        <input class="form-check-input" type="checkbox" value="1"
-                            aria-label="Tick this to receive marketing information">
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-check-input" type="checkbox" value="1"
+                                aria-label="Tick this to receive marketing information">
+                        </div>
+                        <div class="col-10">
+                            <strong>
+                                Please tick this box if you wih to receive marketing information from us. Please
+                                see our <a href="#">Privacy Policy</a> for more information on how we keep your data
+                                safe.
+                            </strong>
+                        </div>
                     </div>
-                    <div class="col-10">
-                        <strong>
-                            Please tick this box if you wih to receive marketing information from us. Please
-                            see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
-                        </strong>
-                    </div>
-                </div>
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+
         </section>
     </main>
 
 
     <footer>
         <!-- div to grid-->
-        <div class="dark-bg">
-            <!-- about links, addresses-->
+        <div class="container">
             <div class="row">
-                <div id="footer-about">
+                <div class="container">
                     <div class="col-12">
                         <h2 class="row upper">About Netmatters</h2>
                         <ul>
@@ -383,13 +386,11 @@
                             <li class="row"><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                </div>
 
-                <div id="footer-services">
                     <div class="col-12">
                         <h2 class="row upper">Our Services</h2>
                         <ul>
-                            <li class="row"><a href="#">Bespoke software</a></li>
+                            <li class="row"><a href="#">Bespoke Software</a></li>
                             <li class="row"><a href="#">IT Support</a></li>
                             <li class="row"><a href="#">Digital Marketing</a></li>
                             <li class="row"><a href="#">Telecoms Services</a></li>
@@ -398,8 +399,7 @@
                             <li class="row"><a href="#">Developer Training</a></li>
                         </ul>
                     </div>
-                </div>
-                <div id="footer-offices">
+
                     <div class="col-12">
                         <h2 class="row upper">Cambridge Office</h2>
                         <ul>
@@ -408,9 +408,11 @@
                             <li class="row">Cowley Road, Milton,</li>
                             <li class="row">Cambridge,</li>
                             <li class="row">CB4 0WS</li>
-                            <li class="row"><a href="#">Tel: 01223 37 57 72</a></li>
+                            <br>
+                            <li class="row tel">Tel: <a href="#">01223 37 57 72</a></li>
                         </ul>
                     </div>
+
                     <div class="col-12">
                         <h2 class="row upper">Wymondham Office</h2>
                         <ul>
@@ -419,9 +421,11 @@
                             <li class="row">Gateway 11 Business Park,</li>
                             <li class="row">Wymondham, Norfolk,</li>
                             <li class="row">NR18 0WZ</li>
-                            <li class="row"><a href="#">Tel: 01603 70 40 20</a></li>
+                            <br>
+                            <li class="row tel">Tel: <a href="#">01603 70 40 20</a></li>
                         </ul>
                     </div>
+
                     <div class="col-12">
                         <h2 class="row upper">Great Yarmouth Office</h2>
                         <ul>
@@ -430,32 +434,37 @@
                             <li class="row">Beacon Park, Gorleston,</li>
                             <li class="row">Great Yarmouth, Norfolk,</li>
                             <li class="row">NR31 7RA</li>
-                            <li class="row"><a href="#">Tel: 01493 60 32 04</a></li>
+                            <br>
+                            <li class="row tel">Tel: <a href="#">01493 60 32 04</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="row border-top">
-                <!--copyright-->
-                <div class="col-4" id="footer-copyright">
-                    <p>&copy; Copyright Netmatters 2022. All rights reserved.</p>
-                </div>
-                <div class="col-1">
-                    <p>&dash;</p>
-                </div>
-                <!-- sitemap -->
-                <div class="col-2" id="footer-sitemap">
-                    <a href="#">Sitemap</a>
-                </div>
-                <!-- social media links-->
-                <div class="col" id="social-media">
-                    <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/netmatters/" target="_blank"></a>
-                    <a class="fa-brands fa-twitter" href="https://twitter.com/netmattersltd" target="_blank"></a>
-                    <a class="fa-brands fa-instagram" href="https://www.instagram.com/netmattersltd/"
-                        target="_blank"></a>
-                    <a class="fa-brands fa-linkedin-in"
-                        href="https://www.linkedin.com/company/netmatters-ltd/?original_referer=" target="_blank"></a>
+            <hr class="hr">
+
+            <div class="row">
+                <div class="copyright">
+                    <div class="col-4">
+                        <p>&copy; Copyright Netmatters 2022. All rights reserved.</p>
+                    </div>
+                    <div class="col-1">
+                        <p>&dash;</p>
+                    </div>
+                    <div class="col-2">
+                        <a href="#">Sitemap</a>
+                    </div>
+                    <div class="col socials">
+                        <span>
+                            <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/netmatters/"
+                                target="_blank"></a>
+                        </span>
+                        <a class="fa-brands fa-twitter" href="https://twitter.com/netmattersltd" target="_blank"></a>
+                        <a class="fa-brands fa-instagram" href="https://www.instagram.com/netmattersltd/"
+                            target="_blank"></a>
+                        <a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/company/netmatters-ltd/"
+                            target="_blank"></a>
+                    </div>
                 </div>
             </div>
         </div>
