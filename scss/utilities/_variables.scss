@@ -27,9 +27,6 @@ $palettes: (
 //Font
 $font-stack: 'Poppins', sans-serif;
 
-//Font sizes
-
-
 //Icons
 $service-icons: (
     software: "fa-solid fa-grip-vertical",
@@ -41,5 +38,5 @@ $service-icons: (
     training: "fa-user-graduate",
 );
 
-$star: "fa-star";
-$right-arrow: '<i class=' fa-solid fa-arrow-right'></i>';
+//Measurements
+$textbox-height: 3rem;

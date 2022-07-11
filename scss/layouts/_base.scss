@@ -29,10 +29,17 @@ p {
 }
 
 .input-group {
+    position:relative;
+
     &-text {
         border-radius: 0;
-        height: 3em;
-        text-align: start;
+        height: 3rem;
+        text-align: $textbox-height;
         width: 100%;
+        transition: none;
     }
+}
+
+button {
+    border-radius: 4%;
 }
