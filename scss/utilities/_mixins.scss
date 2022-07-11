@@ -1,0 +1,22 @@
+@mixin debug {
+    * {
+        outline: solid 1px red;
+    }
+    @content;
+}
+
+@mixin round-background($size) {
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+}
+
+@mixin dark {
+    background-color: getColor(layout, primary);
+
+    * {
+        color: getColor(layout, white);
+    }
+
+    @content;
+}

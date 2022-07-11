@@ -1,3 +1,287 @@
+/*
+    scss file structure referred from TreeHouse - "Sass Basics - Debugging Sass with Sourcemaps"
+    https://teamtreehouse.com/library/debugging-sass-with-sourcemaps
+*/
+.btn {
+  border: none;
+  padding: 0.75rem 1rem;
+  margin: 0.6rem 0;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center; }
 
+.software {
+  padding: 0em 1em; }
+  .software .card-title {
+    color: #67809f; }
+  .software .btn,
+  .software .thumbnail {
+    background-color: #67809f; }
+
+.support {
+  padding: 0em 1em; }
+  .support .card-title {
+    color: #4183d7; }
+  .support .btn,
+  .support .thumbnail {
+    background-color: #4183d7; }
+
+.marketing {
+  padding: 0em 1em; }
+  .marketing .card-title {
+    color: #2ecc71; }
+  .marketing .btn,
+  .marketing .thumbnail {
+    background-color: #2ecc71; }
+
+.telecoms {
+  padding: 0em 1em; }
+  .telecoms .card-title {
+    color: #d64541; }
+  .telecoms .btn,
+  .telecoms .thumbnail {
+    background-color: #d64541; }
+
+.design {
+  padding: 0em 1em; }
+  .design .card-title {
+    color: #926fb1; }
+  .design .btn,
+  .design .thumbnail {
+    background-color: #926fb1; }
+
+.security {
+  padding: 0em 1em; }
+  .security .card-title {
+    color: #f62459; }
+  .security .btn,
+  .security .thumbnail {
+    background-color: #f62459; }
+
+.training {
+  padding: 0em 1em; }
+  .training .card-title {
+    color: #ce4125; }
+  .training .btn,
+  .training .thumbnail {
+    background-color: #ce4125; }
+
+.card {
+  margin-bottom: 2rem; }
+  .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.8em; }
+  .card-text {
+    font-size: small;
+    line-height: 1.375rem; }
+  .card .thumbnail {
+    font-size: 1.8em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .card .btn {
+    font-size: 1.063rem;
+    border-radius: .2em; }
+
+#main-nav {
+  padding-top: 1.5em; }
+  #main-nav .phone,
+  #main-nav .burger {
+    font-size: 2em;
+    float: right; }
+  #main-nav .burger {
+    background-color: #333645;
+    color: #ffffff;
+    width: 2em;
+    border-radius: 4px; }
+  #main-nav [class*="col"] {
+    padding-bottom: 1.125em; }
+  #main-nav .input-group button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    padding: .5rem .5rem; }
+  #main-nav .input-group-text {
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+body {
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333645;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .4px; }
+
+section {
+  padding: 2rem 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+h1,
+strong {
+  font-weight: 600; }
+
+h1 {
+  font-size: 2.25rem; }
+
+p {
+  line-height: 1.875rem; }
+
+.input-group-text {
+  border-radius: 0;
+  height: 3em;
+  text-align: start;
+  width: 100%; }
+
+#cover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.75em 0 4em 0;
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.75rem; }
+  #cover h1 {
+    font-size: 2em;
+    padding: 0 1em; }
+
+#services h1 {
+  font-size: 2.7rem; }
+#services .card {
+  border-radius: 4%;
+  text-align: center; }
+  #services .card-title {
+    color: #333645; }
+#services .thumbnail {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  align-self: center;
+  margin-top: 1em; }
+
+#welcome {
+  background-color: #333645; }
+  #welcome * {
+    color: #ffffff; }
+  #welcome .btn {
+    background-color: #272936;
+    min-width: 13rem; }
+
+#reviews {
+  background-color: #333645; }
+  #reviews * {
+    color: #ffffff; }
+  #reviews .google {
+    background-color: #4387f6; }
+  #reviews .trustpilot {
+    background-color: #00b67b; }
+  #reviews .star {
+    background-color: #ffa500; }
+  #reviews figure i {
+    color: #ffa500;
+    margin-bottom: 1.7rem; }
+  #reviews figure blockquote {
+    font-size: 1.3rem; }
+  #reviews figure figcaption {
+    margin: 2rem 0; }
+    #reviews figure figcaption strong {
+      font-size: 1.1rem;
+      color: #a3a8ac; }
+  #reviews .btn {
+    padding-left: 2rem;
+    height: 3.5rem; }
+    #reviews .btn i {
+      padding: 0 1rem; }
+
+#latest .view-all {
+  font-size: 1.625rem;
+  justify-content: center;
+  margin-top: 2.8rem; }
+#latest .card-title {
+  font-weight: 600; }
+#latest .card-img-top {
+  object-fit: cover; }
+#latest .card .author {
+  margin-top: 2em; }
+
+#newsletter {
+  background: rgba(0, 0, 0, 0.15); }
+  #newsletter h1 {
+    font-weight: 400;
+    font-size: 2rem; }
+  #newsletter .required::after {
+    content: " *";
+    color: red; }
+  #newsletter .form-control {
+    height: 2.75rem;
+    background-color: #ffffff;
+    margin-bottom: .7em;
+    border-radius: 0; }
+  #newsletter .form-check-input {
+    height: 2rem;
+    width: 2rem;
+    border: solid 3px #333645;
+    background: inherit; }
+    #newsletter .form-check-input:checked {
+      color: #ffffff;
+      background-color: #333645; }
+  #newsletter .btn {
+    background-color: #333645;
+    color: #ffffff; }
+    #newsletter .btn * {
+      color: #ffffff; }
+  #newsletter strong {
+    line-height: 2em; }
+
+footer {
+  background-color: #333645; }
+  footer * {
+    color: #ffffff; }
+  footer * {
+    padding-left: 0;
+    font-size: small; }
+  footer h2 {
+    text-transform: uppercase; }
+  footer .copyright {
+    display: flex;
+    text-align: left; }
+    footer .copyright p {
+      line-height: 1.5em; }
+  footer a:hover {
+    text-decoration: underline;
+    color: inherit; }
+
+.socials {
+  align-items: center;
+  text-align: center; }
+  .socials [class*=facebook] {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #4267B2; }
+  .socials [class*=twitter] {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #1DA1F2; }
+  .socials [class*=instagram] {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #C13584; }
+  .socials [class*=linkedin] {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #0072B1; }
 
 /*# sourceMappingURL=styles.css.map */

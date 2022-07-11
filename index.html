@@ -15,81 +15,459 @@
     <!-- https://fontawesome.com/ -->
     <script src="https://kit.fontawesome.com/df396576ab.js" crossorigin="anonymous"></script>
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- https://getbootstrap.com/docs/5.2/getting-started/download/ -->
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+
+    <!-- https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="css/normalize.css">
 
-    <!-- tab -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- title and ico -->
     <title>Netmatters &mid; Full Service Digital Agency &mid; Cambridgeshire &and; Norfolk &mid; Netmatters</title>
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body>
-    <!-- LAYOUT (xs/s)
-        main navbar (contains logo, telephone shortcut and burger menu. below, general search bar)
-
-        splash img
-        Our Services (dynamic grid)
-        auto gallery of awards (auto greyscale, colored in and pauses on hover)
-        welcome and reviews (read more, buttons for google and trustpilot. on dark theme light font)
-        latest news (light theme, article grids with read mores and view all)
-        email newsletter sign-up (slightly grey background)
-
-        footer
-    -->
-    <!-- HEADER -->
     <header>
-        <!-- Partially sticky on desktop -->
-        <div>
-            <ul class="main-nav">
-                <!-- Logo -->
-                <li><a href="#">home</a></li>
+        <nav class="navbar-nav" id="main-nav">
+            <div class="container">
+                <div class="row align-items-center">
 
-                <!-- Telephone, query if you need to link to anything -->
-                <li><a href="#">phone</a></li>
+                    <div class="col-6">
+                        <div class="navbar-brand">
+                            <a href="#">
+                                <img class="img-fluid logo" src="img/logo.png" alt="netmatters">
+                            </a>
+                        </div>
+                    </div>
 
-                <!-- SUPPORT -->
-                <!-- DISAPPEARS ON SMALL -->
-                <li><a href="#">support</a></li>
+                    <div class="col-3">
+                        <div class="nav-item">
+                            <a href="#" class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
 
-                <!-- CONTACT -->
-                <!-- DISAPPEARS ON SMALL -->
-                <li><a href="#">contact</a></li>
+                    <div class="col-3">
+                        <div class="nav-item">
+                            <button class="btn burger">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
 
-                <!-- Search... -->
-                <!-- BOTTOM ON SMALL -->
-                <li><a href="#">search</a></li>
+                    <div class="col-12">
+                        <div class="nav-item">
+                            <div class="input-group align-items-center">
+                                <input class="input-group-text" type="text" placeholder="Search...">
+                                <span class="input-group-append">
+                                    <button type="submit" value="SEARCH" class="btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-                <!-- Burger menu -->
-                <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -->
-                <li>
-                    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- DISAPPEARS ON SMALL-->
-        <div>
-            <ul class="second-nav">
-                <li><a href="#">software</a></li>
-                <li><a href="#">support</a></li>
-                <li><a href="#">marketing</a></li>
-                <li><a href="#">telecoms</a></li>
-                <li><a href="#">design</a></li>
-                <li><a href="#">security</a></li>
-                <li><a href="#">training</a></li>
-            </ul>
-        </div>
     </header>
 
 
     <main>
-        <h1>Link do not target anything</h1>
+        <!-- SPLASH -->
+        <section id="cover">
+            <div class="container">
+                <h1><strong>The East Of England's Leading Technology Company</strong></h1>
+                <p><strong>Performance-driven digital and technology services <br>
+                        with complete transparency.</strong></p>
+            </div>
+        </section>
+
+        <!-- OUR SERVICES -->
+        <section id="services">
+            <div class="container">
+                <h1>Our Services</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card software">
+                            <span class="thumbnail">
+                                <i class="fa-solid fa-grip-vertical"></i>
+                            </span>
+                            <div class="card-body">
+                                <h2 class="card-title">Bespoke Software</h2>
+                                <p class="card-text">Tailored software solutions to improve business productivity
+                                    and online profits.</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card support">
+                            <span class="thumbnail">
+                                <i class="fa-solid fa-display"></i>
+                            </span>
+                            <div class="card-body">
+                                <h2 class="card-title">IT Support</h2>
+                                <p class="card-text">Remotely managed IT services that is catered to you businesses
+                                    needs, adds
+                                    value &amp; reduces cost</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card marketing">
+                            <span class="thumbnail">
+                                <i class="fa-solid fa-signal"></i>
+                            </span>
+                            <div class="card-body">
+                                <h2 class="card-title">Digital Marketing</h2>
+                                <p class="card-text">Driven brand awareness &amp; ROI through creative digital marketing
+                                    campaigns.</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card telecoms">
+                            <span class="thumbnail">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div class="card-body">
+                                <h2 class="card-title">Telecoms Services</h2>
+                                <p class="card-text">Stay connected with bespoke telecoms solutions when you need it
+                                    most.</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card design">
+                            <span class="thumbnail">
+                                <i class="fa-solid fa-code"></i>
+                            </span>
+                            <div class="card-body">
+                                <h2 class="card-title">Web Design</h2>
+                                <p class="card-text">User-centric design for businesses looking to make a lasting
+                                    impression.
+                                </p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card security">
+                            <span class="thumbnail">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </span>
+                            <div class="card-body">
+                                <h2 class="card-title">Cyber Security</h2>
+                                <p class="card-text">Ensuring your online business stays secure 24/7 365 days of the
+                                    year.</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card training">
+                            <span class="thumbnail">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </span>
+                            <div class="card-body">
+                                <h2 class="card-title">Developer Training</h2>
+                                <p class="card-text">Have you considered a career in web development but you aren't sure
+                                    where
+                                    to start?</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWARDS -->
+        </section>
+
+        <!-- WELCOME & READMORE -->
+        <!-- WELCOME -->
+        <section id="welcome">
+            <div class="container">
+                <h1>Welcome to Netmatters</h1>
+                <p>
+                    <strong>
+                        Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in
+                        the East of England with offices in
+                        <a href="#">Cambridge</a>, <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.
+                    </strong>
+                </p>
+                <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for
+                    your business are based purely with one benefit in mind: to help improve your business with the most
+                    appropriate solutions.</p>
+                <p>We pride ourselves on being an ethical business and have a unique business offering and cost model
+                    that ensures you get the most from our relationship in an upfront manner.</p>
+                <!-- READMORE BUTTON -->
+                <a href="#" class="btn btn-lg">read more<i class='fa-solid fa-arrow-right'></i></a>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section id="reviews">
+            <div class="container">
+                <h1>What Our Clients Think</h1>
+                <figure>
+                    <div class="stars">
+                        <i class='fa fa-star fa-3x'></i>
+                        <i class='fa fa-star fa-3x'></i>
+                        <i class='fa fa-star fa-3x'></i>
+                        <i class='fa fa-star fa-3x'></i>
+                        <i class='fa fa-star fa-3x'></i>
+                    </div>
+                    <blockquote>
+                        <em>
+                            Great service. Took the reigns and did all the leg work for us. Ensured we were happy with
+                            our website and made all changes necessary as and when asked to do so.
+                        </em>
+                    </blockquote>
+                    <figcaption>
+                        <strong>
+                            The Oliver King - SEA Scaffolding
+                        </strong>
+                    </figcaption>
+                </figure>
+                <!-- BUTTONS -->
+                <a href="#" class="btn btn-lg google">google reviews
+                    <i class='fa-solid fa-arrow-right'></i></a>
+                <a href="#" class="btn btn-lg trustpilot">trustpilot reviews
+                    <i class='fa-solid fa-arrow-right'></i></a>
+            </div>
+        </section>
+
+
+        <!-- LATEST NEWS -->
+        <section id="latest">
+            <div class="container">
+                <h1>Latest News</h1>
+
+                <div class="card design">
+                    <img src="img/latest/celebrating-june-graduates.jpg" class="card-img-top" alt="Our June Graduates">
+
+                    <div class="card-body">
+                        <h2 class="card-title"><small>SCS Graduates June 2022</small></h2>
+                        <p class="card-text">The Netmatters SCS trainee scheme is completely unique to Netmatters, it
+                            enables individuals of a va...</p>
+                        <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                        <hr>
+                        <div class="author">
+                            <div class="row">
+                                <div class="author-icon thumbnail col-2">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="details col-10">
+                                    <div class="row"><strong>Posted by Netmatters</strong></div>
+                                    <div class="row"><small>8th July 2022</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card marketing">
+                    <img src="img/latest/junior-digital-marketing.jpg" class="card-img-top" alt="Now Hiring">
+
+                    <div class="card-body">
+                        <h2 class="card-title"><small>Junior Digital Marketing Executive</small></h2>
+                        <p class="card-text">Salary Range £18,000 &dash; £23,000 Hours 40 hours per week, Mon &mdash;
+                            Fri Location Wymondham, Norfolk. Great...</p>
+                        <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                        <hr>
+                        <div class="author">
+                            <div class="row">
+                                <div class="author-icon thumbnail col-2">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="details col-10">
+                                    <div class="row"><strong>Posted by Jim Palmer</strong></div>
+                                    <div class="row"><small>5th July 2022</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card marketing">
+                    <img src="img/latest/seo-article.jpg" class="card-img-top" alt="Our June Graduates">
+
+                    <div class="card-body">
+                        <h2 class="card-title"><small>What You Don't Know About SEO</small></h2>
+                        <p class="card-text">Technology. Competitors. Search Engine Algorithms. These factors are all
+                            inevitably going to be ever...</p>
+                        <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                        <hr>
+                        <div class="author">
+                            <div class="row">
+                                <div class="author-icon thumbnail col-2">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="details col-10">
+                                    <div class="row"><strong>Posted by Netmatters</strong></div>
+                                    <div class="row"><small>24th June 2022</small></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex view-all">
+                    <a href="#">
+                        <strong>
+                            View All
+                        </strong>
+                        <i class='fa-solid fa-arrow-right'></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section id="newsletter">
+            <div class="container">
+                <h1>Email Newsletter Sign-Up</h1>
+                <form action="#">
+                    <label for="name" class="form-label required"><strong>Your Name</strong></label>
+                    <input type="name" name="name" id="newsletter-name" class="form-control" required>
+
+                    <label for="email" class="form-label required"><strong>Your Email</strong></label>
+                    <input type="email" name="email" id="newsletter-email" class="form-control" required>
+
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-check-input" type="checkbox" value="1"
+                                aria-label="Tick this to receive marketing information">
+                        </div>
+                        <div class="col-10">
+                            <strong>
+                                Please tick this box if you wih to receive marketing information from us. Please
+                                see our <a href="#">Privacy Policy</a> for more information on how we keep your data
+                                safe.
+                            </strong>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+
+        </section>
     </main>
 
 
     <footer>
+        <!-- div to grid-->
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="col-12">
+                        <h2 class="row upper">About Netmatters</h2>
+                        <ul>
+                            <li class="row"><a href="#">News</a></li>
+                            <li class="row"><a href="#">Our Careers</a></li>
+                            <li class="row"><a href="#">Our Team</a></li>
+                            <li class="row"><a href="#">Privacy Policy</a></li>
+                            <li class="row"><a href="#">Cookie Policy</a></li>
+                            <li class="row"><a href="#">Terms &amp; Conditions</a></li>
+                            <li class="row"><a href="#">Environmental Policy</a></li>
+                            <li class="row"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12">
+                        <h2 class="row upper">Our Services</h2>
+                        <ul>
+                            <li class="row"><a href="#">Bespoke Software</a></li>
+                            <li class="row"><a href="#">IT Support</a></li>
+                            <li class="row"><a href="#">Digital Marketing</a></li>
+                            <li class="row"><a href="#">Telecoms Services</a></li>
+                            <li class="row"><a href="#">Web Design</a></li>
+                            <li class="row"><a href="#">Cyber Security</a></li>
+                            <li class="row"><a href="#">Developer Training</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12">
+                        <h2 class="row upper">Cambridge Office</h2>
+                        <ul>
+                            <li class="row">Unit 1.31,</li>
+                            <li class="row">St John's Innovation Centre,</li>
+                            <li class="row">Cowley Road, Milton,</li>
+                            <li class="row">Cambridge,</li>
+                            <li class="row">CB4 0WS</li>
+                            <br>
+                            <li class="row tel">Tel: <a href="#">01223 37 57 72</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12">
+                        <h2 class="row upper">Wymondham Office</h2>
+                        <ul>
+                            <li class="row">Unit 15,</li>
+                            <li class="row">Penfold Drive,</li>
+                            <li class="row">Gateway 11 Business Park,</li>
+                            <li class="row">Wymondham, Norfolk,</li>
+                            <li class="row">NR18 0WZ</li>
+                            <br>
+                            <li class="row tel">Tel: <a href="#">01603 70 40 20</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12">
+                        <h2 class="row upper">Great Yarmouth Office</h2>
+                        <ul>
+                            <li class="row">Suite F23,</li>
+                            <li class="row">Beacon Innovation Centre,</li>
+                            <li class="row">Beacon Park, Gorleston,</li>
+                            <li class="row">Great Yarmouth, Norfolk,</li>
+                            <li class="row">NR31 7RA</li>
+                            <br>
+                            <li class="row tel">Tel: <a href="#">01493 60 32 04</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr">
+
+            <div class="row">
+                <div class="copyright">
+                    <div class="col-4">
+                        <p>&copy; Copyright Netmatters 2022. All rights reserved.</p>
+                    </div>
+                    <div class="col-1">
+                        <p>&dash;</p>
+                    </div>
+                    <div class="col-2">
+                        <a href="#">Sitemap</a>
+                    </div>
+                    <div class="col socials">
+                        <span>
+                            <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/netmatters/"
+                                target="_blank"></a>
+                        </span>
+                        <a class="fa-brands fa-twitter" href="https://twitter.com/netmattersltd" target="_blank"></a>
+                        <a class="fa-brands fa-instagram" href="https://www.instagram.com/netmattersltd/"
+                            target="_blank"></a>
+                        <a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/company/netmatters-ltd/"
+                            target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
 </body>

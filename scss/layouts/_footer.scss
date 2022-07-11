@@ -1,0 +1,41 @@
+footer {
+    @include dark;
+
+    * {
+        padding-left: 0;
+        font-size: small;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+
+    .copyright {
+        display: flex;
+        text-align: left;
+
+        p {
+            line-height: 1.5em;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: inherit;
+    }
+}
+
+//social media links
+.socials {
+    align-items: center;
+    text-align: center;
+
+    @each $tag,
+    $col in map-get($palettes, socials) {
+        [class*=#{$tag}] {
+            @include round-background(2.5em);
+            background-color: $col;
+        }
+    }
+}

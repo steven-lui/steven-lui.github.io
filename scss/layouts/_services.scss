@@ -1,0 +1,22 @@
+#services {
+
+    //@include debug;
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    .card {
+        border-radius: 4%;
+        text-align: center;
+
+        &-title {
+            color: getColor(layout, primary);
+        }
+    }
+
+    .thumbnail {
+        @include round-background(4rem);
+        align-self: center;
+        margin-top: 1em;
+    }
+}

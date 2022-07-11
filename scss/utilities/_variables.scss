@@ -1,54 +1,45 @@
 //Colors
-$white: #fff;
-$color-primary: #333645;
-$color-secondary: #272936;
-$color-accent: #4183d7;
-$color-grey: #ddd;
-$color-darkgrey: #999aa2;
+$palettes: (
+    layout: (primary: #333645,
+        secondary: #272936,
+        accent: #4183d7,
+        white: #ffffff,
+    ),
+    services: (software: #67809f,
+        support: #4183d7,
+        marketing: #2ecc71,
+        telecoms: #d64541,
+        design: #926fb1,
+        security: #f62459,
+        training: #ce4125,
+    ),
+    reviews: (google: #4387f6,
+        trustpilot: #00b67b,
+        star: #ffa500,
+    ),
+    socials: (facebook: #4267B2,
+        twitter:#1DA1F2,
+        instagram:#C13584,
+        linkedin:#0072B1,
+    )
+);
 
-
-//Fonts
+//Font
 $font-stack: 'Poppins', sans-serif;
 
-//Theme
-$service-colors: (
-    'software': #67809f,
-    'support': #4183d7,
-    'marketing': #2ecc71,
-    'telecoms': #d64541,
-    'design': #926fb1,
-    'security': #f62459,
-    'training': #ce4125,
-);
+//Font sizes
 
-$reviews: (
-    'google': #4387f6,
-    'trustpilot': #00b67b,
-);
 
 //Icons
 $service-icons: (
-    'software': '<i class="fa-solid fa-grid"></i>',
-    'support': '<i class="fa-solid fa-display"></i>',
-    'marketing': '<i class="fa-solid fa-signal-bars-good"></i>',
-    'telecoms': '<i class="fa-solid fa-phone"></i>',
-    'design': '<i class="fa-solid fa-code"></i>',
-    'security': '<i class="fa-solid fa-shield-quartered"></i>',
-    'training': '<i class="fa-solid fa-graduation-cap"></i>',
+    software: "fa-solid fa-grip-vertical",
+    support: "fa-display",
+    marketing: "fa-solid fa-signal",
+    telecoms: "fa-phone",
+    design: "fa-code",
+    security:"fa-shield-halved",
+    training: "fa-user-graduate",
 );
 
-$social-icons: (
-    'facebook': '<i class="fa-brands fa-facebook-f"></i>',
-    'twitter': '<i class="fa-brands fa-twitter"></i>',
-    'instagram': '<i class="fa-brands fa-instagram"></i>',
-    'linkedin': '<i class="fa-brands fa-linkedin-in"></i>',
-);
-
-
-$support-button-icon: '<i class="fa-solid fa-graduation-cap"></i>';
-$contact-button-icon: '<i class="fa-solid fa-paper-plane"></i>';
-$search-button-icon: '<i class="fa-solid fa-magnifying-glass"></i>';
-$burger-menu-icon: '<i class="fa-solid fa-bars"></i>';
-
-$star: '<i class="fa-solid fa-star"></i>';
-$right-arrow: '<i class="fa-solid fa-arrow-right"></i>';
+$star: "fa-star";
+$right-arrow: '<i class=' fa-solid fa-arrow-right'></i>';

@@ -12,16 +12,16 @@ Hi, I'm on a course with Netmatters. One of my assignments on this course is thi
 - [ ] The site should be built responsively to work on multiple screen sizes.
 - [ ] The site should have consistent margins down the page (eg. there should be a straight line on both sides of the content)
 - [ ] The site should work in Edge, Firefox and Chrome with no issues between browsers.
-- [ ] Please do not include links to the Netmatters actual website, for links please just use a #
+- [x] Please do not include links to the Netmatters actual website, for links please just use a #
 - Advice for tackling this challenge
-    - [ ] Set-up GitHub, using GitHub desktop, and commit and push to this __**regularly throughout the day every day**__
+    - [x] Set-up GitHub, using GitHub desktop, and commit and push to this __**regularly throughout the day every day**__
     - [ ] Use Scout-App to compile your SASS
-    - [ ] Call your file index.html
+    - [x] Call your file index.html
     - [ ] Set the meta viewport and charset within the HTML
     - [ ] Use mobile first
-    - [ ] Use Flexbox and/or Bootstrap
+    - [x] Use Flexbox and/or Bootstrap
     - [ ] Tackle this section by section
-    - [ ] Use Font Awesome or icomoon for icons
+    - [x] Use Font Awesome or icomoon for icons
 
 ## Testing
 - [ ] Notify three other scions from this task to peer test your website.

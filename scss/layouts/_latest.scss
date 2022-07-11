@@ -1,0 +1,22 @@
+#latest {
+    .view-all {
+        font-size: 1.625rem;
+        justify-content: center;
+        margin-top: 2.8rem;
+    }
+
+    .card {
+        &-title {
+            font-weight: 600;
+        }
+
+        &-img-top {
+            //height: 40rem;
+            object-fit: cover;
+        }
+
+        .author {
+            margin-top: 2em;
+        }
+    }
+}
