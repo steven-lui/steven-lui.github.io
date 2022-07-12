@@ -82,11 +82,6 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0; }
-  .card .btn {
-    position: absolute;
-    left: 50%;
-    bottom: 1rem;
-    transform: translateX(-50%); }
 
 /*!
  * Hamburgers
@@ -265,8 +260,8 @@ p {
     width: 100%;
     transition: none; }
 
-button {
-  border-radius: 4%; }
+.container {
+  padding: 0 15px; }
 
 #cover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
@@ -300,6 +295,11 @@ button {
   align-self: center;
   margin-top: 1em;
   margin-bottom: 0.1rem; }
+#services .btn {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%); }
 
 #welcome {
   background-color: #333645;
@@ -345,16 +345,30 @@ button {
     #reviews .btn i {
       padding: 0 1rem; }
 
+#latest .card-title {
+  font-weight: 600; }
+#latest .card-img-top {
+  object-fit: cover;
+  border-radius: 0; }
+#latest .card-body {
+  padding: 1.6em; }
+#latest .card hr {
+  margin: 1.3rem 0; }
+#latest .author {
+  display: flex;
+  padding-top: .6rem;
+  font-size: 14px; }
+  #latest .author-details {
+    padding-left: 1.25rem;
+    color: #666; }
+    #latest .author-details strong {
+      color: #333645; }
+  #latest .author-icon img {
+    border-radius: 50%; }
 #latest .view-all {
   font-size: 1.625rem;
   justify-content: center;
   margin-top: 2.8rem; }
-#latest .card-title {
-  font-weight: 600; }
-#latest .card-img-top {
-  object-fit: cover; }
-#latest .card .author {
-  margin-top: 2em; }
 
 #newsletter {
   background: rgba(0, 0, 0, 0.15); }

@@ -1,22 +1,51 @@
 #latest {
+    .card {
+        //border-radius: 0 0 1rem 1rem;
+
+        &-title {
+            font-weight: 600;
+        }
+
+        &-img-top {
+            object-fit: cover;
+            border-radius: 0;
+        }
+
+        &-body {
+            padding: 1.6em;
+        }
+
+        hr {
+            margin: 1.3rem 0;
+        }
+
+    }
+
+    .author {
+        display: flex;
+        padding-top: .6rem;
+
+        font-size: 14px;
+
+        &-details {
+            padding-left: 1.25rem;
+            color: #666;
+            strong {
+                color: getColor(layout, primary);
+            }
+        }
+
+        &-icon img {
+            border-radius: 50%;
+        }
+
+
+    }
+
     .view-all {
         font-size: 1.625rem;
         justify-content: center;
         margin-top: 2.8rem;
     }
 
-    .card {
-        &-title {
-            font-weight: 600;
-        }
-
-        &-img-top {
-            //height: 40rem;
-            object-fit: cover;
-        }
-
-        .author {
-            margin-top: 2em;
-        }
-    }
 }

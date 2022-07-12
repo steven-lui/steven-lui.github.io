@@ -28,4 +28,11 @@
         margin-top: 1em;
         margin-bottom: 0.1rem;
     }
+
+    .btn {
+        position: absolute;
+        left: 50%;
+        bottom: 1rem;
+        transform: translateX(-50%);
+    }
 }
