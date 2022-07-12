@@ -11,67 +11,67 @@
   justify-content: space-evenly;
   align-items: center; }
 
-.software {
-  padding: 0em 1em; }
-  .software .card-title {
-    color: #67809f; }
-  .software .btn,
-  .software .thumbnail {
-    background-color: #67809f; }
+.software .card-title {
+  color: #67809f; }
+.software .btn,
+.software .thumbnail {
+  background-color: #67809f; }
+.card .software:hover {
+  background-color: #67809f; }
 
-.support {
-  padding: 0em 1em; }
-  .support .card-title {
-    color: #4183d7; }
-  .support .btn,
-  .support .thumbnail {
-    background-color: #4183d7; }
+.support .card-title {
+  color: #4183d7; }
+.support .btn,
+.support .thumbnail {
+  background-color: #4183d7; }
+.card .support:hover {
+  background-color: #4183d7; }
 
-.marketing {
-  padding: 0em 1em; }
-  .marketing .card-title {
-    color: #2ecc71; }
-  .marketing .btn,
-  .marketing .thumbnail {
-    background-color: #2ecc71; }
+.marketing .card-title {
+  color: #2ecc71; }
+.marketing .btn,
+.marketing .thumbnail {
+  background-color: #2ecc71; }
+.card .marketing:hover {
+  background-color: #2ecc71; }
 
-.telecoms {
-  padding: 0em 1em; }
-  .telecoms .card-title {
-    color: #d64541; }
-  .telecoms .btn,
-  .telecoms .thumbnail {
-    background-color: #d64541; }
+.telecoms .card-title {
+  color: #d64541; }
+.telecoms .btn,
+.telecoms .thumbnail {
+  background-color: #d64541; }
+.card .telecoms:hover {
+  background-color: #d64541; }
 
-.design {
-  padding: 0em 1em; }
-  .design .card-title {
-    color: #926fb1; }
-  .design .btn,
-  .design .thumbnail {
-    background-color: #926fb1; }
+.design .card-title {
+  color: #926fb1; }
+.design .btn,
+.design .thumbnail {
+  background-color: #926fb1; }
+.card .design:hover {
+  background-color: #926fb1; }
 
-.security {
-  padding: 0em 1em; }
-  .security .card-title {
-    color: #f62459; }
-  .security .btn,
-  .security .thumbnail {
-    background-color: #f62459; }
+.security .card-title {
+  color: #f62459; }
+.security .btn,
+.security .thumbnail {
+  background-color: #f62459; }
+.card .security:hover {
+  background-color: #f62459; }
 
-.training {
-  padding: 0em 1em; }
-  .training .card-title {
-    color: #ce4125; }
-  .training .btn,
-  .training .thumbnail {
-    background-color: #ce4125; }
+.training .card-title {
+  color: #ce4125; }
+.training .btn,
+.training .thumbnail {
+  background-color: #ce4125; }
+.card .training:hover {
+  background-color: #ce4125; }
 
 .card {
   margin-bottom: 2rem; }
   .card-title {
     font-size: 1.3rem;
-    margin-bottom: 0.8em; }
+    margin-bottom: 1em; }
   .card-text {
     font-size: small;
     line-height: 1.375rem; }
@@ -80,10 +80,13 @@
     color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-shrink: 0; }
   .card .btn {
-    font-size: 1.063rem;
-    border-radius: .2em; }
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%); }
 
 /*!
  * Hamburgers
@@ -233,7 +236,7 @@ body {
   letter-spacing: .4px; }
 
 section {
-  padding: 2rem 0; }
+  padding: 1.5rem 0; }
 
 a {
   color: inherit;
@@ -273,22 +276,27 @@ button {
   line-height: 1.75rem; }
   #cover h1 {
     font-size: 2em;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     margin-bottom: 1.4rem; }
 
 #services h1 {
-  font-size: 2.7rem; }
+  font-size: 2.7rem;
+  margin-bottom: 1em; }
 #services .card {
-  border-radius: 4%;
+  height: 18.25rem;
+  border-radius: 1rem;
   text-align: center; }
   #services .card-title {
     color: #333645; }
+  #services .card-taller {
+    height: 20rem; }
 #services .thumbnail {
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   align-self: center;
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-bottom: 0.1rem; }
 
 #welcome {
   background-color: #333645; }
@@ -405,5 +413,13 @@ footer {
     width: 2.5em;
     height: 2.5em;
     background-color: #0072B1; }
+
+#awards {
+  padding: 0;
+  margin-bottom: 3rem; }
+  #awards img {
+    filter: grayscale(100%); }
+    #awards img:hover {
+      filter: none; }
 
 /*# sourceMappingURL=styles.css.map */

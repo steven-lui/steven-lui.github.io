@@ -1,13 +1,15 @@
 @each $tag in map-keys($service-icons) {
     .#{$tag} {
-        padding: 0em 1em;
-
         .card-title {
             color: getColor(services, $tag);
         }
 
         .btn,
         .thumbnail {
+            background-color: getColor(services, $tag);
+        }
+
+        .card &:hover {
             background-color: getColor(services, $tag);
         }
     }
@@ -18,7 +20,7 @@
 
     &-title {
         font-size: 1.3rem;
-        margin-bottom: 0.8em;
+        margin-bottom: 1em;
     }
 
     &-text {
@@ -32,10 +34,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-shrink: 0
     }
 
     .btn {
-        font-size: 1.063rem;
-        border-radius: .2em;
+        position: absolute;
+        left: 50%;
+        bottom:1rem;
+        transform: translateX(-50%);
     }
 }
