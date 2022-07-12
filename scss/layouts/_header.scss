@@ -1,5 +1,6 @@
 #main-nav {
-    //@include debug;
+    @include underline;
+
     margin-top: 1.8rem;
     margin-bottom: .3rem;
 
@@ -12,6 +13,7 @@
         float: left;
         font-size: 1.8rem;
         text-underline-offset: .3rem;
+
         :hover {
             text-decoration: underline;
             color: getColor(layout, secondary);

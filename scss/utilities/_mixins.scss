@@ -2,6 +2,7 @@
     * {
         outline: solid 1px red;
     }
+
     @content;
 }
 
@@ -19,4 +20,11 @@
     }
 
     @content;
+}
+
+@mixin underline {
+    a:hover {
+        text-decoration: underline;
+        color: inherit;
+    }
 }

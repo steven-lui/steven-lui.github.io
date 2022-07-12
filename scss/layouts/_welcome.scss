@@ -1,8 +1,19 @@
 #welcome {
     @include dark;
-    
+    @include underline;
+
+    padding-bottom: 0;
+
     .btn {
         background-color: getColor(layout, secondary);
         min-width: 13rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    p:nth-last-child(2) {
+        margin-bottom: 1rem;
     }
 }
