@@ -2,14 +2,13 @@
     scss file structure referred from TreeHouse - "Sass Basics - Debugging Sass with Sourcemaps"
     https://teamtreehouse.com/library/debugging-sass-with-sourcemaps
 */
-
 @import 'utilities/variables';
 @import 'utilities/functions';
 @import 'utilities/mixins';
 
 @import 'components/button';
 @import 'components/card';
-@import 'components/hamburger';
+@import 'components/hamburgers/hamburgers';
 
 @import 'layouts/header';
 @import 'layouts/base';
