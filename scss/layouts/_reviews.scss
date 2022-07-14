@@ -7,7 +7,7 @@
     @each $key,
     $col in map-get($palettes, reviews) {
         .#{$key} {
-            background-color: $col;
+            @include dark-bg-on-hover($col);
         }
     }
 
@@ -36,6 +36,7 @@
     .btn {
         padding-left: 2rem;
         height: 3.5rem;
+        border-radius: .4rem;
 
         i {
             padding: 0 1rem;

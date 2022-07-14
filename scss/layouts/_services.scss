@@ -1,5 +1,5 @@
 #services {
-    //@include debug;
+    //@include debug
 
     h1 {
         font-size: 2.7rem;
@@ -27,12 +27,5 @@
         align-self: center;
         margin-top: 1em;
         margin-bottom: 0.1rem;
-    }
-
-    .btn {
-        position: absolute;
-        left: 50%;
-        bottom: 1rem;
-        transform: translateX(-50%);
     }
 }

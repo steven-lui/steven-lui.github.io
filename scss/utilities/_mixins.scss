@@ -16,15 +16,26 @@
     background-color: getColor(layout, primary);
 
     * {
-        color: getColor(layout, white);
+        color: $base;
     }
 
     @content;
 }
 
-@mixin underline {
-    a:hover {
-        text-decoration: underline;
-        color: inherit;
+@mixin dark-bg-on-hover($color) {
+    background-color: $color;
+    &:hover {
+        background-color: darken($color, $dark-percent);
     }
+
+    @content;
+}
+
+@mixin dark-col-on-hover($color) {
+    color: $color;
+    &:hover {
+        color: darken($color, $dark-percent);
+    }
+
+    @content;
 }

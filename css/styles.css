@@ -4,71 +4,22 @@
 */
 .btn {
   border: none;
+  border-radius: 2px;
   padding: 0.75rem 1rem;
   margin: 0.6rem 0;
   text-transform: uppercase;
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center; }
-
-.software .card-title {
-  color: #67809f; }
-.software .btn,
-.software .thumbnail {
-  background-color: #67809f; }
-.card .software:hover {
-  background-color: #67809f; }
-
-.support .card-title {
-  color: #4183d7; }
-.support .btn,
-.support .thumbnail {
-  background-color: #4183d7; }
-.card .support:hover {
-  background-color: #4183d7; }
-
-.marketing .card-title {
-  color: #2ecc71; }
-.marketing .btn,
-.marketing .thumbnail {
-  background-color: #2ecc71; }
-.card .marketing:hover {
-  background-color: #2ecc71; }
-
-.telecoms .card-title {
-  color: #d64541; }
-.telecoms .btn,
-.telecoms .thumbnail {
-  background-color: #d64541; }
-.card .telecoms:hover {
-  background-color: #d64541; }
-
-.design .card-title {
-  color: #926fb1; }
-.design .btn,
-.design .thumbnail {
-  background-color: #926fb1; }
-.card .design:hover {
-  background-color: #926fb1; }
-
-.security .card-title {
-  color: #f62459; }
-.security .btn,
-.security .thumbnail {
-  background-color: #f62459; }
-.card .security:hover {
-  background-color: #f62459; }
-
-.training .card-title {
-  color: #ce4125; }
-.training .btn,
-.training .thumbnail {
-  background-color: #ce4125; }
-.card .training:hover {
-  background-color: #ce4125; }
+  .btn:hover {
+    text-decoration: none; }
 
 .card {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  transition: .5s ease;
+  top: 0; }
+  .card:hover {
+    top: -.75rem; }
   .card-title {
     font-size: 1.3rem;
     margin-bottom: 1em; }
@@ -82,6 +33,111 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0; }
+
+.software .btn,
+.software .thumbnail {
+  background-color: #67809f; }
+.software .card-title {
+  color: #67809f; }
+#services .software:hover {
+  background-color: #67809f;
+  color: #ffffff; }
+  #services .software:hover .btn,
+  #services .software:hover .thumbnail {
+    background-color: #ffffff;
+    color: #67809f; }
+  #services .software:hover .card-title {
+    color: #ffffff; }
+
+.support .btn,
+.support .thumbnail {
+  background-color: #4183d7; }
+.support .card-title {
+  color: #4183d7; }
+#services .support:hover {
+  background-color: #4183d7;
+  color: #ffffff; }
+  #services .support:hover .btn,
+  #services .support:hover .thumbnail {
+    background-color: #ffffff;
+    color: #4183d7; }
+  #services .support:hover .card-title {
+    color: #ffffff; }
+
+.marketing .btn,
+.marketing .thumbnail {
+  background-color: #2ecc71; }
+.marketing .card-title {
+  color: #2ecc71; }
+#services .marketing:hover {
+  background-color: #2ecc71;
+  color: #ffffff; }
+  #services .marketing:hover .btn,
+  #services .marketing:hover .thumbnail {
+    background-color: #ffffff;
+    color: #2ecc71; }
+  #services .marketing:hover .card-title {
+    color: #ffffff; }
+
+.telecoms .btn,
+.telecoms .thumbnail {
+  background-color: #d64541; }
+.telecoms .card-title {
+  color: #d64541; }
+#services .telecoms:hover {
+  background-color: #d64541;
+  color: #ffffff; }
+  #services .telecoms:hover .btn,
+  #services .telecoms:hover .thumbnail {
+    background-color: #ffffff;
+    color: #d64541; }
+  #services .telecoms:hover .card-title {
+    color: #ffffff; }
+
+.design .btn,
+.design .thumbnail {
+  background-color: #926fb1; }
+.design .card-title {
+  color: #926fb1; }
+#services .design:hover {
+  background-color: #926fb1;
+  color: #ffffff; }
+  #services .design:hover .btn,
+  #services .design:hover .thumbnail {
+    background-color: #ffffff;
+    color: #926fb1; }
+  #services .design:hover .card-title {
+    color: #ffffff; }
+
+.security .btn,
+.security .thumbnail {
+  background-color: #f62459; }
+.security .card-title {
+  color: #f62459; }
+#services .security:hover {
+  background-color: #f62459;
+  color: #ffffff; }
+  #services .security:hover .btn,
+  #services .security:hover .thumbnail {
+    background-color: #ffffff;
+    color: #f62459; }
+  #services .security:hover .card-title {
+    color: #ffffff; }
+
+.training .btn,
+.training .thumbnail {
+  background-color: #ce4125; }
+.training .card-title {
+  color: #ce4125; }
+#services .training:hover {
+  background-color: #ce4125;
+  color: #ffffff; }
+  #services .training:hover .btn,
+  #services .training:hover .thumbnail {
+    background-color: #ffffff;
+    color: #ce4125; }
+  #services .training:hover .card-title {
+    color: #ffffff; }
 
 /*!
  * Hamburgers
@@ -106,9 +162,9 @@
   margin: 0;
   overflow: visible; }
   .hamburger:hover {
-    filter: opacity(50%); }
+    opacity: 1; }
   .hamburger.is-active:hover {
-    filter: opacity(50%); }
+    opacity: 1; }
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
@@ -187,42 +243,57 @@
     transform: rotate(90deg);
     transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+.input-group-text,
+.form-control {
+  width: 100%;
+  background-color: #ffffff;
+  height: 3rem;
+  font-size: 0.875rem;
+  border-radius: 2px;
+  transition: none;
+  text-align: left;
+  color: #555555; }
+
 #main-nav {
-  margin-top: 1.8rem;
+  margin-top: 1.6rem;
   margin-bottom: .3rem; }
-  #main-nav a:hover {
-    text-decoration: underline;
-    color: inherit; }
   #main-nav [class*="col"] {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    align-self: center; }
   #main-nav .phone {
-    float: left;
-    font-size: 1.8rem;
+    color: #333645;
+    font-size: 2rem;
     text-underline-offset: .3rem; }
+    #main-nav .phone:hover {
+      color: #282b36; }
     #main-nav .phone :hover {
       text-decoration: underline;
-      color: #272936; }
-  #main-nav .hamburger {
+      text-decoration-thickness: 1px; }
+  #main-nav button[class*="hamburger"] {
     background-color: #333645;
+    background-color: #333645;
+    align-self: baseline;
     float: right;
-    padding: 1rem;
-    padding-bottom: 0.6rem; }
-    #main-nav .hamburger * {
+    padding: 0.9em 0.9em 0.6em;
+    border-radius: 3px; }
+    #main-nav button[class*="hamburger"] * {
       color: #ffffff; }
-  #main-nav .input-group-text {
-    width: 100%;
-    outline: 1px solid rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    background-color: #e5e5e5;
-    text-align: left; }
-  #main-nav .input-group .btn {
-    font-size: 1.3rem;
-    position: absolute;
-    margin: 0 .25rem;
-    right: 0;
-    padding: 0.85rem 0.3rem;
-    color: #333645; }
+    #main-nav button[class*="hamburger"]:hover {
+      background-color: #282b36; }
+  #main-nav .input-group {
+    position: relative; }
+    #main-nav .input-group-text {
+      background-color: rgba(0, 0, 0, 0.1);
+      outline: 1px solid rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+    #main-nav .input-group .btn {
+      font-size: 1.3rem;
+      position: absolute;
+      margin: 0 .25rem;
+      right: 0;
+      padding: 0.85rem 0.3rem;
+      color: #333645; }
 
 body {
   font-size: 1rem;
@@ -237,6 +308,9 @@ section {
 a {
   color: inherit;
   text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: inherit; }
 
 h1,
 strong {
@@ -249,17 +323,6 @@ h1 {
 p {
   line-height: 1.875rem; }
 
-.input-group {
-  position: relative;
-  font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.6); }
-  .input-group-text {
-    border-radius: 0;
-    height: 3rem;
-    text-align: 3rem;
-    width: 100%;
-    transition: none; }
-
 .container {
   padding: 0 15px; }
 
@@ -270,7 +333,7 @@ p {
   background-size: cover;
   height: 550px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-size: 1.25rem;
   line-height: 1.75rem; }
   #cover h1 {
@@ -295,11 +358,6 @@ p {
   align-self: center;
   margin-top: 1em;
   margin-bottom: 0.1rem; }
-#services .btn {
-  position: absolute;
-  left: 50%;
-  bottom: 1rem;
-  transform: translateX(-50%); }
 
 #welcome {
   background-color: #333645;
@@ -308,7 +366,10 @@ p {
     color: #ffffff; }
   #welcome .btn {
     background-color: #272936;
-    min-width: 13rem; }
+    min-width: 13rem;
+    border-radius: .4rem; }
+    #welcome .btn:hover {
+      background-color: #1c1e27; }
   #welcome p {
     margin-bottom: 1.5rem; }
   #welcome p:nth-last-child(2) {
@@ -322,10 +383,16 @@ p {
     color: #ffffff; }
   #reviews .google {
     background-color: #4387f6; }
+    #reviews .google:hover {
+      background-color: #2b77f5; }
   #reviews .trustpilot {
     background-color: #00b67b; }
+    #reviews .trustpilot:hover {
+      background-color: #009d6a; }
   #reviews .star {
     background-color: #ffa500; }
+    #reviews .star:hover {
+      background-color: #e69500; }
   #reviews figure i {
     color: #ffa500;
     margin-bottom: 1.7rem; }
@@ -338,7 +405,8 @@ p {
       color: #a3a8ac; }
   #reviews .btn {
     padding-left: 2rem;
-    height: 3.5rem; }
+    height: 3.5rem;
+    border-radius: .4rem; }
     #reviews .btn i {
       padding: 0 1rem; }
 
@@ -372,9 +440,10 @@ p {
 #newsletter {
   background: rgba(0, 0, 0, 0.15); }
   #newsletter a {
+    color: #333645;
     text-decoration: underline; }
     #newsletter a:hover {
-      color: getLayout(layout, secondary); }
+      color: #282b36; }
   #newsletter h1 {
     font-weight: 400;
     font-size: 2rem;
@@ -385,24 +454,23 @@ p {
   #newsletter .form-label {
     margin-bottom: 0; }
   #newsletter .form-control {
-    height: 2.75rem;
-    background-color: #ffffff;
-    margin-bottom: .7em;
-    border-radius: 0; }
+    margin-bottom: 0.875rem; }
   #newsletter .form-check-input {
     height: 2rem;
     width: 2rem;
     border: solid 3px #333645;
     background: inherit; }
     #newsletter .form-check-input:checked {
-      color: #ffffff;
       background-color: #333645; }
   #newsletter .btn {
+    background-color: #333645;
     background-color: #333645;
     color: #ffffff;
     margin: 2rem 0; }
     #newsletter .btn * {
       color: #ffffff; }
+    #newsletter .btn:hover {
+      background-color: #282b36; }
   #newsletter strong {
     line-height: 2em; }
 
@@ -410,9 +478,6 @@ footer {
   background-color: #333645; }
   footer * {
     color: #ffffff; }
-  footer a:hover {
-    text-decoration: underline;
-    color: inherit; }
   footer * {
     font-size: small;
     line-height: 1.375rem;

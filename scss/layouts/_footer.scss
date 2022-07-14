@@ -1,10 +1,9 @@
 footer {
     @include dark;
-    @include underline;
 
     * {
         font-size: small;
-        line-height: 1.375rem;
+        line-height: $small-line-height;
         list-style-type: none;
     }
 
@@ -51,6 +50,7 @@ footer {
                 [class*=#{$tag}] {
                     @include round-background(2.25em);
                     text-decoration: none;
+
                     &:hover {
                         background-color: $col;
                     }

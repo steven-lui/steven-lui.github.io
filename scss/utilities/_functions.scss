@@ -12,6 +12,5 @@
     @return $return;
 }
 
-@function getServiceIcon($key) {
-    @return map-get($service-icons, $key);
-}
+$base: getColor(layout, base);
+$primary: getColor(layout, primary);

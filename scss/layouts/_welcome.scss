@@ -4,8 +4,10 @@
     padding-bottom: 0;
 
     .btn {
-        background-color: getColor(layout, secondary);
+        $c : getColor(layout, secondary);
+        @include dark-bg-on-hover($c);
         min-width: 13rem;
+        border-radius: .4rem;
     }
 
     p {

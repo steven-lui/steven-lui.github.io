@@ -1,40 +1,39 @@
 #main-nav {
-    @include underline;
-
-    margin-top: 1.8rem;
+    margin-top: 1.6rem;
     margin-bottom: .3rem;
-
 
     [class*="col"] {
         margin-bottom: 1rem;
+        align-self: center;
     }
 
     .phone {
-        float: left;
-        font-size: 1.8rem;
+        @include dark-col-on-hover($primary);
+        font-size: 2rem;
         text-underline-offset: .3rem;
 
         :hover {
             text-decoration: underline;
-            color: getColor(layout, secondary);
+            text-decoration-thickness: 1px;
         }
     }
 
-    .hamburger {
+    button[class*="hamburger"] {
         @include dark;
+        @include dark-bg-on-hover($primary);
+        align-self: baseline;
         float: right;
-        padding: 1rem;
-        padding-bottom: 0.6rem;
+        padding: 0.9em 0.9em 0.6em;
+        border-radius: 3px;
     }
 
     .input-group {
+        position: relative;
         &-text {
-            width: 100%;
-            outline: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, .1);
+            outline: 1px solid hsla(0, 0%, 100%, .2);
             border: 2px solid rgba(0, 0, 0, .1);
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-            background-color: #e5e5e5;
-            text-align: left;
         }
 
         .btn {
