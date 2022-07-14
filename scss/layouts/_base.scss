@@ -30,8 +30,12 @@ p {
     line-height: 1.875rem;
 }
 
+//forms
+//search bar & newsletter
 .input-group {
     position: relative;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, .6);
 
     &-text {
         border-radius: 0;
@@ -39,6 +43,7 @@ p {
         text-align: $textbox-height;
         width: 100%;
         transition: none;
+
     }
 }
 
