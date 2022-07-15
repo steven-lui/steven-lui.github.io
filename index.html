@@ -61,8 +61,10 @@
                         </div>
                     </div>
 
+                    <!-- HAMBURGER -->
                     <div class="col-3">
-                        <button class="btn hamburger hamburger--spin" type="button">
+                        <button class="btn hamburger hamburger--spin" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebar">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
@@ -86,8 +88,37 @@
         </nav>
     </header>
 
-    <!-- COOKIE-->
-    <div class="modal fade" id="cookie" tabindex="-1">
+    <!-- SIDEBAR -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body">
+            <div class="side-services">
+                <a href="#" class="btn">contact us</a>
+
+                <div>
+                    <a href="#" class="btn">
+                        <div class="software">
+                            <i class="fa-solid fa-grip-vertical"></i>
+                        </div>
+                        <br>Bespoke<br>Software
+                    </a>
+                    <ul>
+                        <li><a href="#" class="btn">workflow</a></li>
+                        <li><a href="#" class="btn">automation</a></li>
+                        <li><a href="#" class="btn">integration</a></li>
+                        <li><a href="#" class="btn">database</a></li>
+                        <li><a href="#" class="btn">sharepoint</a></li>
+                        <li><a href="#" class="btn">management</a></li>
+                        <li><a href="#" class="btn">navision</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- COOKIE -->
+    <!-- PROVEN TO WORK SO IS TURNED OFF FOR NOW-->
+    <div class="modal fade" id="cookie1" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
