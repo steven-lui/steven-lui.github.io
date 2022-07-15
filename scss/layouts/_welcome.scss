@@ -1,8 +1,20 @@
 #welcome {
     @include dark;
     
+    padding-bottom: 0;
+
     .btn {
-        background-color: getColor(layout, secondary);
+        $c : getColor(layout, secondary);
+        @include dark-bg-on-hover($c);
         min-width: 13rem;
+        border-radius: .4rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    p:nth-last-child(2) {
+        margin-bottom: 1rem;
     }
 }

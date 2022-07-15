@@ -1,22 +1,31 @@
 #services {
+    //@include debug
 
-    //@include debug;
     h1 {
         font-size: 2.7rem;
     }
 
     .card {
-        border-radius: 4%;
+        height: 18.25rem;
+        border-radius: 1rem;
         text-align: center;
 
         &-title {
             color: getColor(layout, primary);
         }
+
+        &-taller {
+            height: 20rem;
+        }
     }
 
     .thumbnail {
-        @include round-background(4rem);
+        $size: 4rem;
+        border-radius: 50%;
+        width: $size;
+        height: $size;
         align-self: center;
         margin-top: 1em;
+        margin-bottom: 0.1rem;
     }
 }

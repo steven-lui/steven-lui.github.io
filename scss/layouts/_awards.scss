@@ -1,0 +1,12 @@
+#awards {
+    padding: 0;
+    margin-bottom: 3rem;
+
+    img {
+        filter: grayscale(100%);
+
+        &:hover {
+            filter: none;
+        }
+    }
+}

@@ -1,10 +1,16 @@
 #newsletter {
+    background: rgba(0, 0, 0, .15);
+
+    a {
+        @include dark-col-on-hover($primary);
+        text-decoration: underline;
+    }
+
     h1 {
         font-weight: 400;
         font-size: 2rem;
+        margin-bottom: .6rem;
     }
-
-    background: rgba(0, 0, 0, .15);
 
     .required::after {
         content: " *";
@@ -12,31 +18,31 @@
     }
 
     .form {
-        &-control {
-            height: 2.75rem;
-            background-color: getColor(layout, white);
-            margin-bottom: .7em;
-            border-radius: 0;
+        &-label {
+            margin-bottom: 0;
+        }
 
+        &-control {
+            margin-bottom: $smaller-font;
         }
 
         &-check-input {
             height: 2rem;
             width: 2rem;
-            border: solid 3px getColor(layout, primary);
+            border: solid 3px $primary;
             background: inherit;
 
             &:checked {
-                color: getColor(layout, white);
-                background-color: getColor(layout, primary);
+                background-color: $primary;
             }
         }
     }
 
-
     .btn {
         @include dark;
-        color: getColor(layout, white);
+        @include dark-bg-on-hover($primary);
+        color: $base;
+        margin: 2rem 0;
     }
 
     strong {

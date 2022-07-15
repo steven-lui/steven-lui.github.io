@@ -1,0 +1,13 @@
+//forms
+//search bar & newsletter
+.input-group-text,
+.form-control {
+    width: 100%;
+    background-color: $base;
+    height: $textbox-height;
+    font-size: $smaller-font;
+    border-radius: 2px;
+    transition: none;
+    text-align: left;
+    color: #555555;
+}

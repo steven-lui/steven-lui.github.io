@@ -34,9 +34,8 @@
     <header>
         <nav class="navbar-nav" id="main-nav">
             <div class="container">
-                <div class="row align-items-center">
-
-                    <div class="col-6">
+                <div class="row">
+                    <div class="col">
                         <div class="navbar-brand">
                             <a href="#">
                                 <img class="img-fluid logo" src="img/logo.png" alt="netmatters">
@@ -44,38 +43,39 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-1">
                         <div class="nav-item">
                             <a href="#" class="phone">
-                                <i class="fa-solid fa-phone"></i>
+                                <span>
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </span>
                             </a>
                         </div>
                     </div>
 
                     <div class="col-3">
-                        <div class="nav-item">
-                            <button class="btn burger">
-                                <i class="fa-solid fa-bars"></i>
-                            </button>
-                        </div>
+                        <button class="btn hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
                     </div>
 
                     <div class="col-12">
                         <div class="nav-item">
-                            <div class="input-group align-items-center">
-                                <input class="input-group-text" type="text" placeholder="Search...">
-                                <span class="input-group-append">
-                                    <button type="submit" value="SEARCH" class="btn">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
-                                </span>
+                            <div class="input-group">
+                                <input type="text" name="search-name" id="search-name" placeholder="Search..."
+                                    class="input-group-text">
+                                <button type="button" value="SUBMIT" id="search-button" class="btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-
     </header>
 
 
@@ -95,7 +95,7 @@
                 <h1>Our Services</h1>
                 <div class="row">
                     <div class="col-12">
-                        <div class="card software">
+                        <div class="card card-taller software">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-grip-vertical"></i>
                             </span>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card support">
+                        <div class="card card-taller support">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-display"></i>
                             </span>
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card marketing">
+                        <div class="card card-taller marketing">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-signal"></i>
                             </span>
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="card training">
+                        <div class="card card-taller training">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-user-graduate"></i>
                             </span>
@@ -190,8 +190,13 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- AWARDS -->
+        <!-- AWARDS -->
+        <section id="awards">
+            <div class="container">
+                <img src="img/awards/PartnerBadge.png" alt="Google Partner Badge">
+            </div>
         </section>
 
         <!-- WELCOME & READMORE -->
@@ -201,8 +206,8 @@
                 <h1>Welcome to Netmatters</h1>
                 <p>
                     <strong>
-                        Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in
-                        the East of England with offices in
+                        Netmatters is a leading <a href="#">Bespoke Software</a>, <a href="#">IT Support</a>
+                        , and <a href="#">Digital Marketing</a> company based in the East of England with offices in
                         <a href="#">Cambridge</a>, <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.
                     </strong>
                 </p>
@@ -236,7 +241,7 @@
                     </blockquote>
                     <figcaption>
                         <strong>
-                            The Oliver King - SEA Scaffolding
+                            Oliver King - SEA Scaffolding
                         </strong>
                     </figcaption>
                 </figure>
@@ -264,14 +269,13 @@
                         <a href="#" class="btn btn-primary stretched-link">Read More</a>
                         <hr>
                         <div class="author">
-                            <div class="row">
-                                <div class="author-icon thumbnail col-2">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <div class="details col-10">
-                                    <div class="row"><strong>Posted by Netmatters</strong></div>
-                                    <div class="row"><small>8th July 2022</small></div>
-                                </div>
+                            <div class="author-icon">
+                                <img src="img/authors/netmatters-ltd-VXAv.webp" alt="Netmatters">
+                            </div>
+                            <div class="author-details">
+                                <strong>Posted by Netmatters</strong>
+                                <br>
+                                8th July 2022
                             </div>
                         </div>
                     </div>
@@ -287,14 +291,13 @@
                         <a href="#" class="btn btn-primary stretched-link">Read More</a>
                         <hr>
                         <div class="author">
-                            <div class="row">
-                                <div class="author-icon thumbnail col-2">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <div class="details col-10">
-                                    <div class="row"><strong>Posted by Jim Palmer</strong></div>
-                                    <div class="row"><small>5th July 2022</small></div>
-                                </div>
+                            <div class="author-icon">
+                                <img src="img/authors/james-palmer-1KKg.webp" alt="Jim Palmer">
+                            </div>
+                            <div class="author-details">
+                                <strong>Posted by Jim Palmer</strong>
+                                <br>
+                                5th July 2022
                             </div>
                         </div>
                     </div>
@@ -305,33 +308,32 @@
 
                     <div class="card-body">
                         <h2 class="card-title"><small>What You Don't Know About SEO</small></h2>
-                        <p class="card-text">Technology. Competitors. Search Engine Algorithms. These factors are all
+                        <p class="card-text">Technology. Competitors. Search Engine Algorithms. These factors
+                            are all
                             inevitably going to be ever...</p>
                         <a href="#" class="btn btn-primary stretched-link">Read More</a>
                         <hr>
                         <div class="author">
-                            <div class="row">
-                                <div class="author-icon thumbnail col-2">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <div class="details col-10">
-                                    <div class="row"><strong>Posted by Netmatters</strong></div>
-                                    <div class="row"><small>24th June 2022</small></div>
-                                </div>
+                            <div class="author-icon">
+                                <img src="img/authors/netmatters-ltd-VXAv.webp" alt="Netmatters">
+                            </div>
+                            <div class="author-details">
+                                <strong>Posted by Netmatters</strong>
+                                <br>
+                                24th June 2022
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="d-flex view-all">
-                    <a href="#">
-                        <strong>
+                    <strong>
+                        <a href="#">
                             View All
-                        </strong>
-                        <i class='fa-solid fa-arrow-right'></i>
-                    </a>
+                            <i class='fa-solid fa-arrow-right'></i>
+                        </a>
+                    </strong>
                 </div>
-
             </div>
         </section>
 
@@ -349,7 +351,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <input class="form-check-input" type="checkbox" value="1"
+                            <input class="form-check-input" type="checkbox" value="0"
                                 aria-label="Tick this to receive marketing information">
                         </div>
                         <div class="col-10">
@@ -369,10 +371,9 @@
 
 
     <footer>
-        <!-- div to grid-->
         <div class="container">
-            <div class="row">
-                <div class="container">
+            <div class="container">
+                <div class="row">
                     <div class="col-12">
                         <h2 class="row upper">About Netmatters</h2>
                         <ul>
@@ -441,10 +442,8 @@
                 </div>
             </div>
 
-            <hr class="hr">
-
-            <div class="row">
-                <div class="copyright">
+            <div class="copyright">
+                <div class="row">
                     <div class="col-4">
                         <p>&copy; Copyright Netmatters 2022. All rights reserved.</p>
                     </div>
@@ -455,10 +454,8 @@
                         <a href="#">Sitemap</a>
                     </div>
                     <div class="col socials">
-                        <span>
-                            <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/netmatters/"
-                                target="_blank"></a>
-                        </span>
+                        <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/netmatters/"
+                            target="_blank"></a>
                         <a class="fa-brands fa-twitter" href="https://twitter.com/netmattersltd" target="_blank"></a>
                         <a class="fa-brands fa-instagram" href="https://www.instagram.com/netmattersltd/"
                             target="_blank"></a>
@@ -468,7 +465,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 </body>
 

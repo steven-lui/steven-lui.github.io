@@ -2,6 +2,7 @@
     * {
         outline: solid 1px red;
     }
+
     @content;
 }
 
@@ -15,7 +16,25 @@
     background-color: getColor(layout, primary);
 
     * {
-        color: getColor(layout, white);
+        color: $base;
+    }
+
+    @content;
+}
+
+@mixin dark-bg-on-hover($color) {
+    background-color: $color;
+    &:hover {
+        background-color: darken($color, $dark-percent);
+    }
+
+    @content;
+}
+
+@mixin dark-col-on-hover($color) {
+    color: $color;
+    &:hover {
+        color: darken($color, $dark-percent);
     }
 
     @content;
