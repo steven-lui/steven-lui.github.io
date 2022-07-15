@@ -1,10 +1,15 @@
 #cover {
+    height: 550px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 550px;
 
     text-align: center;
     color: $base;
@@ -13,7 +18,5 @@
 
     h1 {
         font-size: 2em;
-        margin-top: 4.5rem;
-        margin-bottom: 1.4rem;
     }
 }

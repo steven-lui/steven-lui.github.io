@@ -29,6 +29,7 @@
 
     .input-group {
         position: relative;
+
         &-text {
             background-color: rgba(0, 0, 0, .1);
             outline: 1px solid hsla(0, 0%, 100%, .2);
@@ -48,4 +49,7 @@
         }
     }
 
+    // @include media-breakpoint-only(md) {
+    //     color: red;
+    // }
 }
