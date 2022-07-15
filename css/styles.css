@@ -541,4 +541,34 @@ footer {
     #awards img:hover {
       filter: none; }
 
+.modal {
+  padding: 0 1.45rem; }
+  .modal-content {
+    border-radius: 5px; }
+  .modal-title, .modal-body, .modal-footer {
+    margin: 0 3px; }
+  .modal-body {
+    color: #666;
+    padding-bottom: 2rem;
+    word-break: break-word; }
+    .modal-body a {
+      color: #333645; }
+      .modal-body a:hover {
+        color: #282b36; }
+  .modal-footer {
+    padding: 0.5rem 1rem; }
+    .modal-footer .settings,
+    .modal-footer .accept {
+      color: #ffffff;
+      width: 100%; }
+    .modal-footer .settings {
+      background-color: #999aa2;
+      margin-bottom: 1.25rem; }
+      .modal-footer .settings:hover {
+        background-color: #8c8d96; }
+    .modal-footer .accept {
+      background-color: #926fb1; }
+      .modal-footer .accept:hover {
+        background-color: #855ea8; }
+
 /*# sourceMappingURL=styles.css.map */
