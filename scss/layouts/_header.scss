@@ -27,6 +27,16 @@
         border-radius: 3px;
     }
 
+    .support {
+        @include dark-bg-on-hover(#4183d7);
+        color: $base;
+    }
+
+    .contact {
+        @include dark-bg-on-hover(#999aa2);
+        color: $base;
+    }
+
     .input-group {
         position: relative;
 
@@ -44,7 +54,7 @@
             margin: 0 .25rem;
             right: 0;
             padding: $pad-y 0.3rem;
-            color: getColor(layout, primary);
+            color: $primary;
 
         }
     }

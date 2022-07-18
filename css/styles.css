@@ -280,6 +280,16 @@
       color: #ffffff; }
     #main-nav button[class*="hamburger"]:hover {
       background-color: #282b36; }
+  #main-nav .support {
+    background-color: #4183d7;
+    color: #ffffff; }
+    #main-nav .support:hover {
+      background-color: #2c75d2; }
+  #main-nav .contact {
+    background-color: #999aa2;
+    color: #ffffff; }
+    #main-nav .contact:hover {
+      background-color: #8c8d96; }
   #main-nav .input-group {
     position: relative; }
     #main-nav .input-group-text {
@@ -313,11 +323,11 @@ a {
     text-decoration: underline;
     color: inherit; }
 
-h1,
+h2,
 strong {
   font-weight: 600; }
 
-h1 {
+h2 {
   margin-bottom: 2rem;
   font-size: 2.25rem; }
 
@@ -327,13 +337,18 @@ p {
 .container {
   padding: 0 15px; }
 
+#darker {
+  background-color: #333645; }
+  #darker * {
+    color: #ffffff; }
+
 #cover {
   height: 550px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0)), url("../img/cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -341,10 +356,14 @@ p {
   color: #ffffff;
   font-size: 1.25rem;
   line-height: 1.75rem; }
-  #cover h1 {
+  @media (min-width: 992px) {
+    #cover {
+      font-size: 2rem;
+      text-align: left; } }
+  #cover h2 {
     font-size: 2em; }
 
-#services h1 {
+#services h2 {
   font-size: 2.7rem; }
 #services .card {
   height: 18.25rem;
@@ -363,10 +382,7 @@ p {
   margin-bottom: 0.1rem; }
 
 #welcome {
-  background-color: #333645;
   padding-bottom: 0; }
-  #welcome * {
-    color: #ffffff; }
   #welcome .btn {
     background-color: #272936;
     min-width: 13rem;
@@ -379,11 +395,8 @@ p {
     margin-bottom: 1rem; }
 
 #reviews {
-  background-color: #333645;
   padding-top: .5rem;
   padding-bottom: 2.75rem; }
-  #reviews * {
-    color: #ffffff; }
   #reviews .google {
     background-color: #4387f6; }
     #reviews .google:hover {
@@ -448,7 +461,7 @@ p {
     text-decoration: underline; }
     #newsletter a:hover {
       color: #282b36; }
-  #newsletter h1 {
+  #newsletter h2 {
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: .6rem; }
@@ -494,7 +507,7 @@ footer {
     footer .container .container ul a {
       padding: 0;
       margin: 0; }
-    footer .container .container h2 {
+    footer .container .container h3 {
       text-transform: uppercase;
       font-size: 1rem;
       padding: 1.5rem 0; }
