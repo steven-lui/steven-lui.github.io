@@ -30,6 +30,7 @@
         &-details {
             padding-left: 1.25rem;
             color: #666;
+
             strong {
                 color: getColor(layout, primary);
             }
@@ -43,6 +44,7 @@
     }
 
     .view-all {
+        display: flex;
         font-size: 1.625rem;
         justify-content: center;
         margin-top: 2.8rem;

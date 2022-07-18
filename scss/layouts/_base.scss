@@ -4,13 +4,11 @@ body {
     color: getColor(layout, primary);
     font-family: $font-stack;
     letter-spacing: .4px;
-
-
 }
 
 section {
-        padding: 1.5rem 0;
-    width:100%;
+    padding: 1.5rem 0;
+    width: 100%;
 }
 
 a {

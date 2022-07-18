@@ -436,6 +436,7 @@ p {
     #latest .author-icon img {
       border-radius: 50%; }
   #latest .view-all {
+    display: flex;
     font-size: 1.625rem;
     justify-content: center;
     margin-top: 2.8rem; }
@@ -603,5 +604,32 @@ footer {
     align-self: center; }
     #company img:hover {
       filter: none; }
+
+#chat {
+  padding: 0;
+  margin: 0; }
+  #chat .container {
+    position: fixed;
+    bottom: .3rem;
+    right: .3rem;
+    width: auto; }
+    #chat .container .chat {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column; }
+      #chat .container .chat-alert, #chat .container .chat-button {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      #chat .container .chat-alert {
+        background-color: #ffffff;
+        font-size: 14px;
+        min-height: 60px; }
+      #chat .container .chat-button {
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        background-color: #333645;
+        font-size: 2rem; }
+        #chat .container .chat-button * {
+          color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
