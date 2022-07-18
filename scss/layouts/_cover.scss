@@ -5,8 +5,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
+
+    $gradient-start: 0.5;
+    $gradient-end: 0.5;
+
+    @media (min-width: getBreakpoint(lg)) {
+        $gradient-start: 1;
+        $gradient-end: 0;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    background-image: linear-gradient(to right, rgba(black, $gradient-start), rgba(black, $gradient-end)),
+    url("../img/cover.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

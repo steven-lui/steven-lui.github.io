@@ -38,3 +38,7 @@ p {
 .container {
     padding: 0 15px;
 }
+
+#darker {
+    @include dark;
+}
