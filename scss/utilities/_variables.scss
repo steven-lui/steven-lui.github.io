@@ -32,3 +32,13 @@ $font-stack: 'Poppins', sans-serif;
 $textbox-height: 3rem;
 $smaller-font: 0.875rem;
 $small-line-height:1.375rem;
+
+//Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;

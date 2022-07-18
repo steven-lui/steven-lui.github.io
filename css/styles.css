@@ -303,7 +303,8 @@ body {
   letter-spacing: .4px; }
 
 section {
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+  width: 100%; }
 
 a {
   color: inherit;
@@ -594,5 +595,13 @@ footer {
       background-color: rgba(0, 0, 0, 0.25);
       margin: 0;
       padding: 0.6rem; }
+
+#company {
+  margin-bottom: 1rem; }
+  #company img {
+    filter: grayscale(100%);
+    align-self: center; }
+    #company img:hover {
+      filter: none; }
 
 /*# sourceMappingURL=styles.css.map */

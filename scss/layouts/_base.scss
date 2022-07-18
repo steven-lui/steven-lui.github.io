@@ -1,14 +1,16 @@
 body {
-    //@include debug;
     font-size: 1rem;
     background-color: $base;
     color: getColor(layout, primary);
     font-family: $font-stack;
     letter-spacing: .4px;
+
+
 }
 
 section {
-    padding: 1.5rem 0;
+        padding: 1.5rem 0;
+    width:100%;
 }
 
 a {

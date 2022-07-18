@@ -1,0 +1,8 @@
+#company {
+    margin-bottom: 1rem;
+
+    img {
+        @include recol-on-hover;
+        align-self: center;
+    }
+}

@@ -3,10 +3,6 @@
     margin-bottom: 3rem;
 
     img {
-        filter: grayscale(100%);
-
-        &:hover {
-            filter: none;
-        }
+        @include recol-on-hover;
     }
 }
