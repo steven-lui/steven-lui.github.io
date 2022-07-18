@@ -1,0 +1,42 @@
+.modal {
+    padding: 0 1.45rem;
+
+    &-content {
+        border-radius: 5px;
+    }
+
+    &-title,
+    &-body,
+    &-footer {
+        margin: 0 3px;
+    }
+
+    &-body {
+        color: #666;
+        padding-bottom: 2rem;
+        word-break: break-word;
+
+        a {
+            @include dark-col-on-hover($primary);
+        }
+    }
+
+    &-footer {
+        padding: 0.5rem 1rem;
+
+        .settings,
+        .accept {
+            color: $base;
+            width: 100%;
+        }
+
+        .settings {
+            @include dark-bg-on-hover(#999aa2);
+            margin-bottom: 1.25rem;
+        }
+
+        .accept {
+            @include dark-bg-on-hover(#926fb1);
+        }
+    }
+}

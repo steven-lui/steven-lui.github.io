@@ -1,0 +1,36 @@
+#chat {
+    padding: 0;
+    margin: 0;
+
+    .container {
+        position: fixed;
+        bottom: .3rem;
+        right: .3rem;
+        width: auto;
+
+
+        .chat {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+
+            &-alert,
+            &-button {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            &-alert {
+                background-color: $base;
+                font-size: 14px;
+                min-height: 60px;
+            }
+
+            &-button {
+                @include round-background(4rem);
+                @include dark;
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

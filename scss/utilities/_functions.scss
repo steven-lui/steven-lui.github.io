@@ -14,3 +14,7 @@
 
 $base: getColor(layout, base);
 $primary: getColor(layout, primary);
+
+@function getBreakpoint($breakpoint) {
+    @return map-get($breakpoints, $breakpoint);
+}

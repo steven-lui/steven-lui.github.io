@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
+    <!-- meta data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title and ico -->
+    <title>Netmatters &mid; Full Service Digital Agency &mid; Cambridgeshire &and; Norfolk &mid; Netmatters</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- https://fonts.google.com/specimen/Poppins?query=poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,15 +27,18 @@
     <!-- https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="css/normalize.css">
 
+    <!-- https://code.jquery.com/jquery-3.6.0.min.js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- title and ico -->
-    <title>Netmatters &mid; Full Service Digital Agency &mid; Cambridgeshire &and; Norfolk &mid; Netmatters</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- custom js-->
+    <script src="js/cookie.js"></script>
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar-nav" id="main-nav">
             <div class="container">
@@ -43,7 +51,7 @@
                         </div>
                     </div>
 
-                    <div class="col-1">
+                    <div class="col-1 d-md-none">
                         <div class="nav-item">
                             <a href="#" class="phone">
                                 <span>
@@ -53,15 +61,17 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
-                        <button class="btn hamburger hamburger--spin" type="button">
+                    <!-- HAMBURGER -->
+                    <div class="col-sm-3 col-md-2 order-md-last">
+                        <button class="btn hamburger hamburger--spin" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebar">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-sm-12 col-md-4">
                         <div class="nav-item">
                             <div class="input-group">
                                 <input type="text" name="search-name" id="search-name" placeholder="Search..."
@@ -78,8 +88,64 @@
         </nav>
     </header>
 
+    <!-- SIDEBAR -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body">
+            <div class="side-services">
+                <a href="#" class="btn">contact us</a>
+
+                <div>
+                    <a href="#" class="btn">
+                        <div class="software">
+                            <i class="fa-solid fa-grip-vertical"></i>
+                        </div>
+                        <br>Bespoke<br>Software
+                    </a>
+                    <ul>
+                        <li><a href="#" class="btn">workflow</a></li>
+                        <li><a href="#" class="btn">automation</a></li>
+                        <li><a href="#" class="btn">integration</a></li>
+                        <li><a href="#" class="btn">database</a></li>
+                        <li><a href="#" class="btn">sharepoint</a></li>
+                        <li><a href="#" class="btn">management</a></li>
+                        <li><a href="#" class="btn">navision</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- COOKIE -->
+    <!-- ID "cookie1"->"cookie" TO REENABLE -->
+    <div class="modal fade" id="cookie" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="cookie-label">Cookies Policy</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Our website uses cookies. This helps us provide you with a good experience on our website. To
+                        see
+                        what cookies we use and what they do, and to opt-in on non-essential cookies click "change
+                        settings". For a detailed explanation, click on "<a href="#">Privacy Policy</a>" otherwise click
+                        "Accept Cookies" to enter.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn settings">Change settings</a>
+                    <a class="btn accept" data-bs-dismiss="modal">Accept cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <main>
+
+
         <!-- SPLASH -->
         <section id="cover">
             <div class="container">
@@ -134,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12 col-md-6">
                         <div class="card telecoms">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-phone"></i>
@@ -147,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12 col-md-6">
                         <div class="card design">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-code"></i>
@@ -161,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12 col-md-6">
                         <div class="card security">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-shield-halved"></i>
@@ -174,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-sm-12 col-md-6">
                         <div class="card card-taller training">
                             <span class="thumbnail">
                                 <i class="fa-solid fa-user-graduate"></i>
@@ -199,7 +265,6 @@
             </div>
         </section>
 
-        <!-- WELCOME & READMORE -->
         <!-- WELCOME -->
         <section id="welcome">
             <div class="container">
@@ -246,10 +311,14 @@
                     </figcaption>
                 </figure>
                 <!-- BUTTONS -->
-                <a href="#" class="btn btn-lg google">google reviews
-                    <i class='fa-solid fa-arrow-right'></i></a>
-                <a href="#" class="btn btn-lg trustpilot">trustpilot reviews
-                    <i class='fa-solid fa-arrow-right'></i></a>
+                <a href="#" class="btn btn-lg google">
+                    google reviews
+                    <i class='fa-solid fa-arrow-right'></i>
+                </a>
+                <a href="#" class="btn btn-lg trustpilot">
+                    trustpilot reviews
+                    <i class='fa-solid fa-arrow-right'></i>
+                </a>
             </div>
         </section>
 
@@ -257,86 +326,121 @@
         <!-- LATEST NEWS -->
         <section id="latest">
             <div class="container">
-                <h1>Latest News</h1>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 order-first">
+                        <h1>Latest News</h1>
+                    </div>
 
-                <div class="card design">
-                    <img src="img/latest/celebrating-june-graduates.jpg" class="card-img-top" alt="Our June Graduates">
+                    <div class="col-12 col-md-6 order-md-last">
+                        <div class="card design">
+                            <img src="img/latest/celebrating-june-graduates.jpg" class="card-img-top"
+                                alt="Our June Graduates">
 
-                    <div class="card-body">
-                        <h2 class="card-title"><small>SCS Graduates June 2022</small></h2>
-                        <p class="card-text">The Netmatters SCS trainee scheme is completely unique to Netmatters, it
-                            enables individuals of a va...</p>
-                        <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                        <hr>
-                        <div class="author">
-                            <div class="author-icon">
-                                <img src="img/authors/netmatters-ltd-VXAv.webp" alt="Netmatters">
-                            </div>
-                            <div class="author-details">
-                                <strong>Posted by Netmatters</strong>
-                                <br>
-                                8th July 2022
+                            <div class="card-body">
+                                <h2 class="card-title"><small>SCS Graduates June 2022</small></h2>
+                                <p class="card-text">The Netmatters SCS trainee scheme is completely unique to
+                                    Netmatters, it
+                                    enables individuals of a va...</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                                <hr>
+                                <div class="author">
+                                    <div class="author-icon">
+                                        <img src="img/authors/netmatters-ltd-VXAv.webp" alt="Netmatters">
+                                    </div>
+                                    <div class="author-details">
+                                        <strong>Posted by Netmatters</strong>
+                                        <br>
+                                        8th July 2022
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card marketing">
-                    <img src="img/latest/junior-digital-marketing.jpg" class="card-img-top" alt="Now Hiring">
+                    <div class="col-12 col-md-6 order-md-last">
+                        <div class="card marketing">
+                            <img src="img/latest/junior-digital-marketing.jpg" class="card-img-top" alt="Now Hiring">
 
-                    <div class="card-body">
-                        <h2 class="card-title"><small>Junior Digital Marketing Executive</small></h2>
-                        <p class="card-text">Salary Range £18,000 &dash; £23,000 Hours 40 hours per week, Mon &mdash;
-                            Fri Location Wymondham, Norfolk. Great...</p>
-                        <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                        <hr>
-                        <div class="author">
-                            <div class="author-icon">
-                                <img src="img/authors/james-palmer-1KKg.webp" alt="Jim Palmer">
-                            </div>
-                            <div class="author-details">
-                                <strong>Posted by Jim Palmer</strong>
-                                <br>
-                                5th July 2022
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card marketing">
-                    <img src="img/latest/seo-article.jpg" class="card-img-top" alt="Our June Graduates">
-
-                    <div class="card-body">
-                        <h2 class="card-title"><small>What You Don't Know About SEO</small></h2>
-                        <p class="card-text">Technology. Competitors. Search Engine Algorithms. These factors
-                            are all
-                            inevitably going to be ever...</p>
-                        <a href="#" class="btn btn-primary stretched-link">Read More</a>
-                        <hr>
-                        <div class="author">
-                            <div class="author-icon">
-                                <img src="img/authors/netmatters-ltd-VXAv.webp" alt="Netmatters">
-                            </div>
-                            <div class="author-details">
-                                <strong>Posted by Netmatters</strong>
-                                <br>
-                                24th June 2022
+                            <div class="card-body">
+                                <h2 class="card-title"><small>Junior Digital Marketing Executive</small></h2>
+                                <p class="card-text">Salary Range £18,000 &dash; £23,000 Hours 40 hours per week, Mon
+                                    &mdash;
+                                    Fri Location Wymondham, Norfolk. Great...</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                                <hr>
+                                <div class="author">
+                                    <div class="author-icon">
+                                        <img src="img/authors/james-palmer-1KKg.webp" alt="Jim Palmer">
+                                    </div>
+                                    <div class="author-details">
+                                        <strong>Posted by Jim Palmer</strong>
+                                        <br>
+                                        5th July 2022
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="d-flex view-all">
-                    <strong>
-                        <a href="#">
-                            View All
-                            <i class='fa-solid fa-arrow-right'></i>
-                        </a>
-                    </strong>
+                    <div class="col-12 d-md-none">
+                        <div class="card marketing">
+                            <img src="img/latest/seo-article.jpg" class="card-img-top" alt="Our June Graduates">
+
+                            <div class="card-body">
+                                <h2 class="card-title"><small>What You Don't Know About SEO</small></h2>
+                                <p class="card-text">Technology. Competitors. Search Engine Algorithms. These factors
+                                    are all
+                                    inevitably going to be ever...</p>
+                                <a href="#" class="btn btn-primary stretched-link">Read More</a>
+                                <hr>
+                                <div class="author">
+                                    <div class="author-icon">
+                                        <img src="img/authors/netmatters-ltd-VXAv.webp" alt="Netmatters">
+                                    </div>
+                                    <div class="author-details">
+                                        <strong>Posted by Netmatters</strong>
+                                        <br>
+                                        24th June 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="view-all">
+                            <strong>
+                                <a href="#">
+                                    View All
+                                    <i class='fa-solid fa-arrow-right'></i>
+                                </a>
+                            </strong>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- COMPANIES -->
+        <section id="company" class="d-none d-md-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/company/busseys.png" alt="Busseys logo" class="img-fluid">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/company/crane.png" alt="Crane Garden Buildings logo" class="img-fluid">
+                    </div>
+                    <div class="col-1">
+                        <img src="img/company/beat.png" alt="Beat logo" class="img-fluid">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/company/diver.png" alt="Northern Diver logo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- NEWSLETTER -->
         <section id="newsletter">
@@ -354,7 +458,7 @@
                             <input class="form-check-input" type="checkbox" value="0"
                                 aria-label="Tick this to receive marketing information">
                         </div>
-                        <div class="col-10">
+                        <div class="col-sm-10 col-md-11">
                             <strong>
                                 Please tick this box if you wih to receive marketing information from us. Please
                                 see our <a href="#">Privacy Policy</a> for more information on how we keep your data
@@ -374,7 +478,7 @@
         <div class="container">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-xs-12 col-sm-6">
                         <h2 class="row upper">About Netmatters</h2>
                         <ul>
                             <li class="row"><a href="#">News</a></li>
@@ -388,7 +492,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-xs-12 col-sm-6">
                         <h2 class="row upper">Our Services</h2>
                         <ul>
                             <li class="row"><a href="#">Bespoke Software</a></li>
@@ -401,7 +505,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-xs-12 col-sm-6">
                         <h2 class="row upper">Cambridge Office</h2>
                         <ul>
                             <li class="row">Unit 1.31,</li>
@@ -414,7 +518,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-xs-12 col-sm-6">
                         <h2 class="row upper">Wymondham Office</h2>
                         <ul>
                             <li class="row">Unit 15,</li>
@@ -427,7 +531,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-xs-12 col-sm-12">
                         <h2 class="row upper">Great Yarmouth Office</h2>
                         <ul>
                             <li class="row">Suite F23,</li>
@@ -466,6 +570,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- CHAT BUBBLE -->
+    <section id="chat">
+        <div class="container">
+            <div class="chat">
+                <div class="alert chat-alert">
+                    <img src="img/sofia.png" alt="Sofia">
+                    Hey, we're here to help!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <br>
+                <button class="btn chat-button" onclick="openForm()"><i class="fa-solid fa-comment-dots"></i></button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

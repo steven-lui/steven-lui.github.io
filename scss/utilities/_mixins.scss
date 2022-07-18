@@ -24,6 +24,7 @@
 
 @mixin dark-bg-on-hover($color) {
     background-color: $color;
+
     &:hover {
         background-color: darken($color, $dark-percent);
     }
@@ -33,8 +34,19 @@
 
 @mixin dark-col-on-hover($color) {
     color: $color;
+
     &:hover {
         color: darken($color, $dark-percent);
+    }
+
+    @content;
+}
+
+@mixin recol-on-hover() {
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: none;
     }
 
     @content;

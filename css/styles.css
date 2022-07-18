@@ -303,7 +303,8 @@ body {
   letter-spacing: .4px; }
 
 section {
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+  width: 100%; }
 
 a {
   color: inherit;
@@ -327,19 +328,21 @@ p {
   padding: 0 15px; }
 
 #cover {
+  height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
   text-align: center;
   color: #ffffff;
   font-size: 1.25rem;
   line-height: 1.75rem; }
   #cover h1 {
-    font-size: 2em;
-    margin-top: 4.5rem;
-    margin-bottom: 1.4rem; }
+    font-size: 2em; }
 
 #services h1 {
   font-size: 2.7rem; }
@@ -433,6 +436,7 @@ p {
     #latest .author-icon img {
       border-radius: 50%; }
   #latest .view-all {
+    display: flex;
     font-size: 1.625rem;
     justify-content: center;
     margin-top: 2.8rem; }
@@ -540,5 +544,92 @@ footer {
     filter: grayscale(100%); }
     #awards img:hover {
       filter: none; }
+
+.modal {
+  padding: 0 1.45rem; }
+  .modal-content {
+    border-radius: 5px; }
+  .modal-title, .modal-body, .modal-footer {
+    margin: 0 3px; }
+  .modal-body {
+    color: #666;
+    padding-bottom: 2rem;
+    word-break: break-word; }
+    .modal-body a {
+      color: #333645; }
+      .modal-body a:hover {
+        color: #282b36; }
+  .modal-footer {
+    padding: 0.5rem 1rem; }
+    .modal-footer .settings,
+    .modal-footer .accept {
+      color: #ffffff;
+      width: 100%; }
+    .modal-footer .settings {
+      background-color: #999aa2;
+      margin-bottom: 1.25rem; }
+      .modal-footer .settings:hover {
+        background-color: #8c8d96; }
+    .modal-footer .accept {
+      background-color: #926fb1; }
+      .modal-footer .accept:hover {
+        background-color: #855ea8; }
+
+#sidebar {
+  background-color: #333645;
+  width: 17rem;
+  font-size: 1.125rem; }
+  #sidebar * {
+    color: #ffffff; }
+  #sidebar .offcanvas-body {
+    padding: 1.25em; }
+  #sidebar a {
+    border-radius: 3px;
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin: 1.25em 0; }
+  #sidebar ul {
+    list-style: none;
+    padding: 0; }
+    #sidebar ul li a {
+      background-color: rgba(0, 0, 0, 0.25);
+      margin: 0;
+      padding: 0.6rem; }
+
+#company {
+  margin-bottom: 1rem; }
+  #company img {
+    filter: grayscale(100%);
+    align-self: center; }
+    #company img:hover {
+      filter: none; }
+
+#chat {
+  padding: 0;
+  margin: 0; }
+  #chat .container {
+    position: fixed;
+    bottom: .3rem;
+    right: .3rem;
+    width: auto; }
+    #chat .container .chat {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column; }
+      #chat .container .chat-alert, #chat .container .chat-button {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      #chat .container .chat-alert {
+        background-color: #ffffff;
+        font-size: 14px;
+        min-height: 60px; }
+      #chat .container .chat-button {
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        background-color: #333645;
+        font-size: 2rem; }
+        #chat .container .chat-button * {
+          color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
