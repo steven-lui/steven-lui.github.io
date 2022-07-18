@@ -323,11 +323,11 @@ a {
     text-decoration: underline;
     color: inherit; }
 
-h1,
+h2,
 strong {
   font-weight: 600; }
 
-h1 {
+h2 {
   margin-bottom: 2rem;
   font-size: 2.25rem; }
 
@@ -360,10 +360,10 @@ p {
     #cover {
       font-size: 2rem;
       text-align: left; } }
-  #cover h1 {
+  #cover h2 {
     font-size: 2em; }
 
-#services h1 {
+#services h2 {
   font-size: 2.7rem; }
 #services .card {
   height: 18.25rem;
@@ -461,7 +461,7 @@ p {
     text-decoration: underline; }
     #newsletter a:hover {
       color: #282b36; }
-  #newsletter h1 {
+  #newsletter h2 {
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: .6rem; }
@@ -507,7 +507,7 @@ footer {
     footer .container .container ul a {
       padding: 0;
       margin: 0; }
-    footer .container .container h2 {
+    footer .container .container h3 {
       text-transform: uppercase;
       font-size: 1rem;
       padding: 1.5rem 0; }
