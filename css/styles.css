@@ -590,25 +590,26 @@ footer {
 
 #sidebar {
   background-color: #333645;
-  width: 17rem;
-  font-size: 1.125rem; }
+  width: 17rem; }
   #sidebar * {
     color: #ffffff; }
   #sidebar .offcanvas-body {
-    padding: 1.25em; }
-  #sidebar a {
-    border-radius: 3px;
-    outline: 1px solid rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-    margin: 1.25em 0; }
+    padding: 0; }
+  #sidebar .padded {
+    padding: 1.5rem; }
   #sidebar ul {
     list-style: none;
     padding: 0; }
-    #sidebar ul li a {
-      background-color: rgba(0, 0, 0, 0.25);
-      margin: 0;
-      padding: 0.6rem; }
+    #sidebar ul li .btn {
+      background-color: rgba(0, 0, 0, 0.25); }
+  #sidebar .btn {
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin: 0;
+    width: 100%; }
+  #sidebar a {
+    margin: 0; }
 
 #company {
   margin-bottom: 1rem; }
