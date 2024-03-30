@@ -7,11 +7,14 @@
 
 <body>
     <header>
-        {% include navigation.html %}
     </header>
 
     <main>
-        {{ content }}
+        <div class="container text-center">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                {{ content }}
+            </div>
+        </div>
     </main>
 
     <script src="/assets/jquery-3.7.1.min.js" loading="eager"></script>
