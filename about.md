@@ -1,7 +1,0 @@
----
-layout: default
-title: About
-link: /about/
----
-# About page
-I'm looking to find a new opportunity in web development or front end development. I have 1 year experience as a junior developer along with other roles as listed in my CV, which I can provide upon request. There will be a form in the future to contact me directly for more information. Otherwise you can contact me via [LinkedIn](https://www.linkedin.com/in/steven-lui-332965245/){:target="_blank"}.
