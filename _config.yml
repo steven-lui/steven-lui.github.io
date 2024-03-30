@@ -54,6 +54,12 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+permalink: pretty
+collections:
+  my_collection:
+    output: true
+    permalink: /:collection/:name
+
 lsi: false
 safe: true
 #source: [your repo's top level directory]
