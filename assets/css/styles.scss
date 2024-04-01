@@ -11,8 +11,10 @@
 @import "../bootstrap/variables-dark";
 
 // 4. Include any default map overrides here
-$grays: ();
-$colors: ();
+$grays: (
+);
+$colors: (
+);
 
 // 5. Include remainder of required parts
 @import "../bootstrap/maps";
@@ -30,12 +32,12 @@ $colors: ();
 
 // @import "../bootstrap/tables";
 // @import "../bootstrap/forms";
-// @import "../bootstrap/buttons";
+@import "../bootstrap/buttons";
 @import "../bootstrap/transitions";
 // @import "../bootstrap/dropdown";
 // @import "../bootstrap/button-group";
-@import "../bootstrap/nav";
-@import "../bootstrap/navbar";
+// @import "../bootstrap/nav";
+// @import "../bootstrap/navbar";
 // @import "../bootstrap/card";
 // @import "../bootstrap/accordion";
 // @import "../bootstrap/breadcrumb";
@@ -58,3 +60,31 @@ $colors: ();
 @import "../bootstrap/utilities/api";
 
 // 8. Add additional custom code here
+h2 {
+    margin-bottom: .5em;
+}
+
+a:not(:hover) {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.languages {
+    $img-size: 5rem;
+    font-size: $img-size;
+
+    img {
+        height: $img-size;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    figcaption {
+    font-size: $img-size / 2;
+
+    }
+}

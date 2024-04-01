@@ -10,15 +10,19 @@
     </header>
 
     <main>
-        <div class="container text-center">
-            <div class="position-absolute top-50 start-50 translate-middle">
-                {{ content }}
-            </div>
+        <div class="container">
+            {{ content }}
         </div>
     </main>
 
+    <footer class="container d-flex justify-content-center border-top pt-5">
+
+        <button onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;" id="#button-top" class="btn btn-primary btn-lg">Go to top</button>
+    </footer>
+
     <script src="/assets/jquery-3.7.1.min.js" loading="eager"></script>
     <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/13dc2930cf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
